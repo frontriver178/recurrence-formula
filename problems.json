@@ -1,0 +1,100 @@
+[
+  {
+    "id": "A1-01",
+    "title": "漸化式1",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_{n+1}-a_n=4\\)"
+  },
+  {
+    "id": "A1-02",
+    "title": "漸化式2",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=3,\\;a_{n+1}+2a_n=0\\)"
+  },
+  {
+    "id": "A1-03",
+    "title": "漸化式3",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\;a_{n+1}=a_n+6n-1\\)"
+  },
+  {
+    "id": "A1-04",
+    "title": "漸化式4",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=4,\\;a_{n+1}-a_n=-2\\)"
+  },
+  {
+    "id": "A1-05",
+    "title": "漸化式5",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=5,\\;a_{n+1}=3a_n\\)"
+  },
+  {
+    "id": "A1-06",
+    "title": "漸化式6",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\;a_{n+1}-a_n=n\\)"
+  },
+  {
+    "id": "A1-07",
+    "title": "漸化式7",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_{n+1}=-2a_n\\)"
+  },
+  {
+    "id": "A1-08",
+    "title": "漸化式8",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=3,\\;a_{n+1}-a_n=2n+1\\)"
+  },
+  {
+    "id": "A1-09",
+    "title": "漸化式9",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=6,\\;a_{n+1}=\\tfrac12a_n\\)"
+  },
+  {
+    "id": "A1-10",
+    "title": "漸化式10",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=0,\\;a_{n+1}-a_n=5\\)"
+  },
+  {
+    "id": "A1-11",
+    "title": "漸化式11",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=7,\\;a_{n+1}=4a_n\\)"
+  },
+  {
+    "id": "A1-12",
+    "title": "漸化式12",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=3,\\;a_{n+1}-a_n=(-1)^n\\)"
+  },
+  {
+    "id": "A1-13",
+    "title": "漸化式13",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\;a_{n+1}=2a_n\\)"
+  },
+  {
+    "id": "A1-14",
+    "title": "漸化式14",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_{n+1}-a_n=n^2\\)"
+  }
+]
