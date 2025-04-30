@@ -3,7 +3,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>漸化式ランダム出題</title>
+  <title>高校数学小テストジェネレーター</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Tailwind, FontAwesome -->
   <link
@@ -34,26 +34,29 @@
     <div class="glass w-full max-w-md py-10 px-8">
       <h1 class="text-2xl font-bold text-center mb-6">
         <i class="fa-solid fa-book-open text-blue-700 mr-2"></i>
-        漸化式ランダム出題
+        高校数学小テストジェネレーター
       </h1>
-      <p>基本は漸化式を解く問題で，</br>応用は漸化式を利用した確率や場合の数，図形</br>の問題を出題します.</p>
+      <p>基本は公式を確認する問題</br>応用は青チャートのコンパス4から5くらいの難易度です.</p>
 
       <form id="genForm" onsubmit="return false;">
         <div class="space-y-4">
           <div>
             <label class="block font-semibold mb-1">カテゴリ</label>
-            <input
-              id="category" name="category" type="text"
-              value="漸化式"
+            <select
+              id="category" name="category"
               class="w-full px-3 py-2 rounded border"
-            />
+            >
+              <option value="数列">数列</option>
+              <option value="ベクトル">ベクトル</option>
+              <!-- ここに他のカテゴリも今後追加できる -->
+            </select>
           </div>
           <div class="grid grid-cols-2 gap-4">
             <div>
               <label class="block font-semibold mb-1">基本</label>
               <input
                 id="lvl1" name="lvl1" type="number" min="0"
-                value="0"
+                value="4"
                 class="w-full px-3 py-2 rounded border"
               />
             </div>
@@ -61,7 +64,7 @@
               <label class="block font-semibold mb-1">応用</label>
               <input
                 id="lvl2" name="lvl2" type="number" min="0"
-                value="0"
+                value="1"
                 class="w-full px-3 py-2 rounded border"
               />
             </div>

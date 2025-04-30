@@ -1,100 +1,378 @@
 [
   {
     "id": "A1-01",
-    "title": "漸化式1",
-    "category": "漸化式",
+    "title": "数列1",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=1,\\;a_{n+1}-a_n=4\\)"
+    "latex": "\\(a_1=1,\\;a_{n+1}-a_n=4\\)",
+    "answer": "\\(a_n = 1 + 4(n-1)\\)"
   },
   {
     "id": "A1-02",
-    "title": "漸化式2",
-    "category": "漸化式",
+    "title": "数列2",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=3,\\;a_{n+1}+2a_n=0\\)"
+    "latex": "\\(a_1=3,\\;a_{n+1}+2a_n=0\\)",
+    "answer": "\\(a_n = 3\\cdot(-2)^{n-1}\\)"
   },
   {
     "id": "A1-03",
-    "title": "漸化式3",
-    "category": "漸化式",
+    "title": "数列3",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=2,\\;a_{n+1}=a_n+6n-1\\)"
+    "latex": "\\(a_1=2,\\;a_{n+1}=a_n+6n-1\\)",
+    "answer": "\\(a_n = 3n^2 - 4n + 3\\)"
   },
   {
     "id": "A1-04",
-    "title": "漸化式4",
-    "category": "漸化式",
+    "title": "数列4",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=4,\\;a_{n+1}-a_n=-2\\)"
+    "latex": "\\(a_1=4,\\;a_{n+1}-a_n=-2\\)",
+    "answer": "\\(a_n = 6 - 2n\\)"
   },
   {
     "id": "A1-05",
-    "title": "漸化式5",
-    "category": "漸化式",
+    "title": "数列5",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=5,\\;a_{n+1}=3a_n\\)"
+    "latex": "\\(a_1=5,\\;a_{n+1}=3a_n\\)",
+    "answer": "\\(a_n = 5\\cdot3^{n-1}\\)"
   },
   {
     "id": "A1-06",
-    "title": "漸化式6",
-    "category": "漸化式",
+    "title": "例題291",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=2,\\;a_{n+1}-a_n=n\\)"
+    "latex": "\\(a_1=2,\\;a_{n+1}=2a_n+1\\)",
+    "answer": "例題291"
   },
   {
     "id": "A1-07",
-    "title": "漸化式7",
-    "category": "漸化式",
+    "title": "例題292",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=1,\\;a_{n+1}=-2a_n\\)"
+    "latex": "\\(a_1=3,\\;a_{n+1}=3a_n+2n+3\\)",
+    "answer": "例題292"
   },
   {
     "id": "A1-08",
-    "title": "漸化式8",
-    "category": "漸化式",
+    "title": "例題293",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=3,\\;a_{n+1}-a_n=2n+1\\)"
+    "latex": "\\(a_1=1,\\;a_{n+1}=3a_n+2^n\\)",
+    "answer": "例題293"
   },
   {
     "id": "A1-09",
-    "title": "漸化式9",
-    "category": "漸化式",
+    "title": "例題294",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=6,\\;a_{n+1}=\\tfrac12a_n\\)"
+    "latex": "\\(a_1=2,\\;a_{n+1}^{\\frac{1}{2}}=4a_n^3\\)",
+    "answer": "例題294"
   },
   {
     "id": "A1-10",
-    "title": "漸化式10",
-    "category": "漸化式",
+    "title": "練習問題291(1)",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=0,\\;a_{n+1}-a_n=5\\)"
+    "latex": "\\(a_1=1,\\;a_{n+1}=2a_n-6\\)",
+    "answer": "練習問題291(1)"
   },
   {
     "id": "A1-11",
-    "title": "漸化式11",
-    "category": "漸化式",
+    "title": "練習問題291(2)",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=7,\\;a_{n+1}=4a_n\\)"
+    "latex": "\\(a_1=1,\\;a_{n+1}=\\d\\frac{1}{3}a_n+1\\)",
+    "answer": "練習問題291(2)"
   },
   {
     "id": "A1-12",
-    "title": "漸化式12",
-    "category": "漸化式",
+    "title": "練習問題292",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=3,\\;a_{n+1}-a_n=(-1)^n\\)"
+    "latex": "\\(a_1=2,\\;a_{n+1}=2a_n-2n+1\\quad(n=1,2,3,\\ldots)\\)",
+    "answer": "練習問題292"
   },
   {
     "id": "A1-13",
-    "title": "漸化式13",
-    "category": "漸化式",
+    "title": "練習問題293",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=2,\\;a_{n+1}=2a_n\\)"
+    "latex": "\\(a_1=0,\\;a_{n+1}=4a_n-2^{n+1}\\)",
+    "answer": "練習問題293"
   },
   {
     "id": "A1-14",
-    "title": "漸化式14",
-    "category": "漸化式",
+    "title": "練習問題294(1)",
+    "category": "数列",
     "difficulty": 1,
-    "latex": "\\(a_1=1,\\;a_{n+1}-a_n=n^2\\)"
+    "latex": "\\(a_1=1,\\;a_{n+1}=\\d\\frac{1}{\\sqrt{2}}a_n^2\\)",
+    "answer": "練習問題294(1)"
+  },
+  {
+    "id": "A1-15",
+    "title": "練習問題294(2)",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=4,\\;a_{n+1}=8\\sqrt{a_n}\\)",
+    "answer": "練習問題294(2)"
+  },
+  {
+    "id": "A1-16",
+    "title": "例題297",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=\\d\\frac{1}{2},\\;a_{n+1}=\\d\\frac{a_n}{2-a_n}\\)",
+    "answer": "例題297"
+  },
+  {
+    "id": "A1-17",
+    "title": "練習問題297",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=\\d\\frac{1}{2},\\;a_{n+1}=\\d\\frac{a_n}{3a_n+1}\\)",
+    "answer": "練習問題297"
+  },
+  {
+    "id": "A1-18",
+    "title": "例題298",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=8,\\;a_{n+1}=\\d\\frac{3a_n+2}{a_n+2}\\)",
+    "answer": "例題298"
+  },
+  {
+    "id": "A1-19",
+    "title": "練習問題298",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\;a_{n+1}=\\d\\frac{4a_n+1}{2a_n+3}\\)",
+    "answer": "練習問題298"
+  },
+  {
+    "id": "A1-20",
+    "title": "例題295",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;n a_{n+1}=(n+1)a_n+1\\)",
+    "answer": "例題295"
+  },
+  {
+    "id": "A1-21",
+    "title": "練習問題295",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\;n a_{n+1}=(n+1)a_n+3\\)",
+    "answer": "練習問題295"
+  },
+  {
+    "id": "A1-22",
+    "title": "例題296",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;(n+3)a_{n+1}=n a_n\\)",
+    "answer": "例題296"
+  },
+  {
+    "id": "A1-23",
+    "title": "練習問題296",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "数列 \\(\\{a_n\\}\\) の初項から第 \\(n\\) 項までの和を \\(S_n\\) とするとき，\\(S_n=n^2a_n\\) が成り立っている。\\(a_1=1\\) として \\(a_n\\) と \\(S_n\\) を \\(n\\) を用いて表せ。",
+    "answer": "練習問題296"
+  },
+  {
+    "id": "A1-24",
+    "title": "例題299",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "数列 $\\{a_n\\}$ の初項から第 $n$ 項までの和を $S_n$ とするとき、$3S_n = a_n + 7\\cdot 3^n - 6$ が成り立つ。次の問いに答えよ。\\begin{enumerate}[label=(\\arabic*)]\n\\item $a_1$ を求めよ。\n\\item $a_{n+1}$ を $a_n$ を用いて表せ。\n\\item $a_n$ を $n$ を用いて表せ。\n\\end{enumerate}",
+    "answer": "例題299"
+  },
+  {
+    "id": "A1-25",
+    "title": "例題300(1)",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_2=2,\\;a_{n+2}-2a_{n+1}-15a_n=0\\)",
+    "answer": "例題300(1)"
+  },
+  {
+    "id": "A1-26",
+    "title": "例題300(2)",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=3,\\;a_2=5,\\;a_{n+2}-3a_{n+1}+2a_n=0\\)",
+    "answer": "例題300(2)"
+  },
+  {
+    "id": "A1-27",
+    "title": "例題301",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_2=2,\\;a_{n+2}-6a_{n+1}+9a_n=0\\)",
+    "answer": "例題301"
+  },
+  {
+    "id": "A1-28",
+    "title": "練習問題300(1)",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_2=3,\\;a_{n+2}=5a_{n+1}+6a_n\\)",
+    "answer": "練習問題300(1)"
+  },
+  {
+    "id": "A1-29",
+    "title": "練習問題300(2)",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_2=2,\\;a_{n+2}=\\sqrt{n}a_{n+1}a_n\\)",
+    "answer": "練習問題300(2)"
+  },
+  {
+    "id": "A1-30",
+    "title": "練習問題301",
+    "category": "数列",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\;a_2=3,\\;a_{n+2}-4a_{n+1}+4a_n=0\\)",
+    "answer": "練習問題301"
+  },
+  {
+    "id": "A1-31",
+    "title": "例題302",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "2辺の長さが1cmと2cmの長方形タイルを使って、縦2cm・横 $n$ cm の敷き詰め方を $a_n$ とする。次の問いに答えよ。\\begin{enumerate}[label=(\\arabic*)]\n\\item $a_1$, $a_2$ を求めよ。\n\\item $a_{n+2}$ を $a_{n+1},\\;a_n$ を用いて表せ。\n\\item 一般項 $a_n$ を求めよ。\n\\end{enumerate}",
+    "answer": "例題302"
+  },
+  {
+    "id": "A1-32",
+    "title": "練習問題302",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "階段を1段または2段ずつ登るとき，\\(n\\)段目への登り方総数を \\(a_n\\) とする。一般項を求めよ。",
+    "answer": "練習問題302"
+  },
+  {
+    "id": "A1-33",
+    "title": "例題303",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "\\(a_1=1,\\;b_1=3,\\;a_{n+1}=3a_n+b_n,\\;b_{n+1}=2a_n+4b_n\\)",
+    "answer": "例題303"
+  },
+  {
+    "id": "A1-34",
+    "title": "練習問題303",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "2つの数列 $x_n$, $y_n$ があり、$x_1=1,\\;y_1=1$, $x_{n+1}=7x_n+6y_n+4$, $y_{n+1}=-4x_n-3y_n-2$ が定義されている。次の問いに答えよ。\\begin{enumerate}[label=(\\arabic*)]\n\\item $x_2$, $x_3$ を求めよ。\n\\item $a_n=x_n+y_n,\\;b_n=2x_n+3y_n$ と定義して一般項を求めよ。\n\\item $x_n$, $y_n$ の一般項を求めよ。\n\\end{enumerate}",
+    "answer": "練習問題303"
+  },
+  {
+    "id": "A1-35",
+    "title": "例題304",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "自然数列 $a_n$, $b_n$ は $(3+\\sqrt{2})^n = a_n + b_n \\sqrt{2}$ を満たす。次の問いに答えよ。\\begin{enumerate}[label=(\\arabic*)]\n\\item $a_{n+1}$, $b_{n+1}$ を $a_n,\\;b_n$ を使って表せ。\n\\item $c_n = a_n - b_n \\sqrt{2}$ とするとき、一般項を求めよ。\n\\item $a_n$, $b_n$ の一般項を求めよ。\n\\end{enumerate}",
+    "answer": "例題304"
+  },
+  {
+    "id": "A1-36",
+    "title": "練習問題304",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "自然数列 $a_n$, $b_n$ は $(2+\\sqrt{3})^n = a_n + b_n \\sqrt{3}$ を満たす。\\begin{enumerate}[label=(\\arabic*)]\n\\item $a_{n+1},\\;b_{n+1}$ を表せ。\n\\item $a_{n+1}+\\alpha b_{n+1}=\\beta(a_n+\\alpha b_n)$ となるような $\\alpha,\\;\\beta$ を求めよ。\n\\item 一般項を求めよ。\n\\item $(2+\\sqrt{3})^n$ 以下の最大の整数を $p a_n + q$ で表すとき、$p,\\;q$ を求めよ。\n\\end{enumerate}",
+    "answer": "練習問題304"
+  },
+  {
+    "id": "A1-37",
+    "title": "例題305",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "平面上に互いに2点で交わる\\(n\\)個の円によって平面が何個の部分に分けられるか、その個数を\\(a_n\\)を用いて表せ。",
+    "answer": "例題305"
+  },
+  {
+    "id": "A1-38",
+    "title": "練習309 (袋・赤玉と白玉)",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "\\(n\\)個の袋に赤玉1個、白玉9個。各袋から1個ずつ玉を取るとき、赤玉が奇数個取り出される確率を\\(p_n\\)とする。\\(p_n\\)を求めよ。",
+    "answer": "練習309 (袋・赤玉と白玉)"
+  },
+  {
+    "id": "A1-39",
+    "title": "例題309 (袋・1から5の玉)",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "1から5の数字が書かれた玉を取り出し戻す操作を繰り返す。\\(n\\)回後、得られた数字の和が偶数となる確率\\(p_n\\)を求めよ。",
+    "answer": "例題309 (袋・1から5の玉)"
+  },
+  {
+    "id": "A1-40",
+    "title": "例題308",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "1から5の数字カードを引いて戻す操作を繰り返す。最初の\\(n\\)個の和が3の倍数になる確率\\(p_n\\)を求めよ。",
+    "answer": "例題308"
+  },
+  {
+    "id": "A1-41",
+    "title": "練習308 (袋・赤白玉3個取り出し)",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "赤玉4個白玉6個の袋から3個同時に取り出す。赤玉の個数の合計が奇数になる確率を\\(p_n\\)とする。\\(p_n\\)を求めよ。",
+    "answer": "練習308 (袋・赤白玉3個取り出し)"
+  },
+  {
+    "id": "A1-42",
+    "title": "例題305 (球面上の大円)",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "球面上でどの3つをとっても1点で交わらない\\(n\\)個の大円によって球面がいくつの部分に分かれるか、\\(a_n\\)を求めよ。",
+    "answer": "例題305 (球面上の大円)"
+  },
+  {
+    "id": "A1-43",
+    "title": "練習307 (二項展開・項数と係数の和)",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "\\((x+y+z)^n\\)を展開したとき、項の個数、特定項の係数の和を求めよ。",
+    "answer": "練習307 (二項展開・項数と係数の和)"
+  },
+  {
+    "id": "A1-44",
+    "title": "練習306 (三角形と内接円)",
+    "category": "数列",
+    "difficulty": 2,
+    "latex": "三角形\\(A_nB_nC_n\\)の各辺と内接円の接点を元に新たな三角形を作る。\\(a_n\\)の数列と一般式を求めよ。",
+    "answer": "練習306 (三角形と内接円)"
+  },
+  {
+    "id": "V1-01",
+    "title": "ベクトルの内積",
+    "category": "ベクトル",
+    "difficulty": 1,
+    "latex": "\\( \\vec{a} = (2,3),\\; \\vec{b} = (1,-4) \\) のとき，\\( \\vec{a} \\cdot \\vec{b} \\) を求めよ。",
+    "answer": "\\( \\vec{a} \\cdot \\vec{b} = 2 \\times 1 + 3 \\times (-4) = 2 - 12 = -10 \\)"
+  },
+  {
+    "id": "V1-02",
+    "title": "ベクトルの大きさ",
+    "category": "ベクトル",
+    "difficulty": 1,
+    "latex": "\\( \\vec{a} = (3,4) \\) の大きさ \\( |\\vec{a}| \\) を求めよ。",
+    "answer": "\\( |\\vec{a}| = \\sqrt{3^2 + 4^2} = \\sqrt{9+16} = \\sqrt{25} = 5 \\)"
+  },
+  {
+    "id": "V2-01",
+    "title": "成分と直線の関係",
+    "category": "ベクトル",
+    "difficulty": 2,
+    "latex": "点 \\( A(1,2) \\), \\( B(4,6) \\) を通る直線の方向ベクトルを求めよ。",
+    "answer": "方向ベクトルは \\( \\vec{AB} = (4-1,6-2) = (3,4) \\)"
   }
 ]
