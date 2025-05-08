@@ -106,6 +106,7 @@ app.get('/download', (req, res) => {
 
 // サーバー起動
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`▶️ サーバー起動: http://0.0.0.0:${PORT}`);
 });
