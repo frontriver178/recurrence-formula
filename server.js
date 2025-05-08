@@ -72,15 +72,39 @@ ${selected.map(p => `  \\item ${p.answer || '（解答未登録）'}`).join('\n'
 
 \\end{document}`;
 
-  // ⑤ ファイル出力＆PDF生成
-  fs.writeFileSync('output.tex', tex);
-  exec('lualatex -interaction=nonstopmode output.tex', err => {
-    if (err) return res.status(500).send("LaTeX変換失敗");
-    fs.copyFileSync(__dirname + '/output.pdf', __dirname + '/public/output.pdf');
+const tmpDir = '/tmp';
+  const texPath = path.join(tmpDir, 'output.tex');
+  const pdfPath = path.join(tmpDir, 'output.pdf');
+
+  // ② .tex ファイルを /tmp に出力
+  fs.writeFileSync(texPath, tex);
+
+  // ③ lualatex 実行（cwdオプションで /tmp を指定）
+  exec('lualatex -interaction=nonstopmode output.tex', { cwd: tmpDir }, err => {
+    if (err) {
+      console.error('LaTeX変換失敗:', err);
+      return res.status(500).send("LaTeX変換失敗");
+    }
+
+    // ④ public フォルダにコピー（外部アクセス用）
+    const outputPath = path.join(__dirname, 'public', 'output.pdf');
+    fs.copyFileSync(pdfPath, outputPath);
+
     res.send("PDF生成完了!");
   });
 });
 
+// 静的ファイルとしてPDFダウンロード用ルート（任意）
+app.get('/download', (req, res) => {
+  const outputPath = path.join(__dirname, 'public', 'output.pdf');
+  if (fs.existsSync(outputPath)) {
+    res.download(outputPath, 'output.pdf');
+  } else {
+    res.status(404).send("PDFがまだ生成されていません。");
+  }
+});
+
+// サーバー起動
 const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, () => {
   const { address, port } = server.address();
