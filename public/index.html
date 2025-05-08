@@ -1,118 +1,532 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>高校数学小テストジェネレーター</title>
+  <title>美味な数学 - 問題集生成ツール</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Tailwind, FontAwesome -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
-    rel="stylesheet"
-  />
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts - Noto Sans JP -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Additional styles -->
   <style>
+    :root {
+      --primary-light: #4f46e5;
+      --secondary-light: #8b5cf6;
+      --success-light: #10b981;
+      --text-light: #1f2937;
+      --bg-light: #f9fafb;
+      --card-light: rgba(255, 255, 255, 0.9);
+      
+      --primary-dark: #6366f1;
+      --secondary-dark: #a78bfa;
+      --success-dark: #34d399;
+      --text-dark: #f9fafb;
+      --bg-dark: #111827;
+      --card-dark: rgba(31, 41, 55, 0.8);
+    }
+
+    .light-mode {
+      --primary: var(--primary-light);
+      --secondary: var(--secondary-light);
+      --success: var(--success-light);
+      --text: var(--text-light);
+      --bg: var(--bg-light);
+      --card: var(--card-light);
+    }
+
+    .dark-mode {
+      --primary: var(--primary-dark);
+      --secondary: var(--secondary-dark);
+      --success: var(--success-dark);
+      --text: var(--text-dark);
+      --bg: var(--bg-dark);
+      --card: var(--card-dark);
+    }
+
     body {
       font-family: 'Noto Sans JP', sans-serif;
-      background: linear-gradient(135deg,#2563eb 0%,#38bdf8 100%);
-      min-height:100vh; color:#222;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
     }
-    .glass {
-      background:rgba(255,255,255,0.85);
-      border-radius:1.5rem;
-      box-shadow:0 8px 32px rgba(31,38,135,0.1);
-      backdrop-filter:blur(8px);
-      border:1px solid rgba(255,255,255,0.2);
+
+    .card {
+      background: var(--card);
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .math-bg {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .math-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        radial-gradient(circle at 20% 30%, rgba(79, 70, 229, 0.05) 0%, transparent 80%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.05) 0%, transparent 60%);
+      z-index: -1;
+    }
+
+    .math-symbol {
+      position: absolute;
+      opacity: 0.04;
+      font-size: 5rem;
+      font-weight: bold;
+      user-select: none;
+      z-index: -1;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(3deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+
+    .input-custom {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(156, 163, 175, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .input-custom:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+      outline: none;
+    }
+
+    .dark-mode .input-custom {
+      background-color: rgba(30, 41, 59, 0.8);
+      border-color: rgba(156, 163, 175, 0.1);
+    }
+
+    .dark-mode .input-custom:focus {
+      box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1, 1) translate(-50%);
+      transform-origin: 50% 50%;
+    }
+
+    .btn:active::after {
+      animation: ripple 1s ease-out;
+    }
+
+    @keyframes ripple {
+      0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(100, 100);
+        opacity: 0;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .slide-in {
+      animation: slideIn 0.6s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-20px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .spinner {
+      animation: spin 1.5s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .number-input-container {
+      display: flex;
+      align-items: stretch;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    .number-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      background-color: rgba(209, 213, 219, 0.5);
+      transition: background-color 0.2s;
+    }
+
+    .dark-mode .number-btn {
+      background-color: rgba(55, 65, 81, 0.5);
+    }
+
+    .number-btn:hover {
+      background-color: rgba(156, 163, 175, 0.5);
+    }
+
+    .dark-mode .number-btn:hover {
+      background-color: rgba(75, 85, 99, 0.7);
     }
   </style>
 </head>
-<body>
-  <div class="min-h-screen flex items-center justify-center p-4">
-    <div class="glass w-full max-w-md py-10 px-8">
-      <h1 class="text-2xl font-bold text-center mb-6">
-        <i class="fa-solid fa-book-open text-blue-700 mr-2"></i>
-        高校数学小テストジェネレーター
-      </h1>
-      <p>基本は公式を確認する問題</br>応用は青チャートのコンパス4から5くらいの難易度です.</p>
-
-      <form id="genForm" onsubmit="return false;">
-        <div class="space-y-4">
-          <div>
-            <label class="block font-semibold mb-1">カテゴリ</label>
-            <select
-              id="category" name="category"
-              class="w-full px-3 py-2 rounded border"
-            >
-              <option value="数列">数列</option>
-              <option value="ベクトル">ベクトル</option>
-              <!-- ここに他のカテゴリも今後追加できる -->
-            </select>
+<body class="light-mode">
+  <div class="min-h-screen math-bg transition-all duration-300">
+    <!-- Math symbols background -->
+    <div class="math-symbol" style="top: 10%; left: 5%; animation-delay: 0s;">∫</div>
+    <div class="math-symbol" style="top: 30%; left: 15%; animation-delay: 1s;">π</div>
+    <div class="math-symbol" style="top: 60%; left: 8%; animation-delay: 2s;">∑</div>
+    <div class="math-symbol" style="top: 80%; left: 20%; animation-delay: 3s;">√</div>
+    <div class="math-symbol" style="top: 15%; right: 10%; animation-delay: 1.5s;">∞</div>
+    <div class="math-symbol" style="top: 45%; right: 15%; animation-delay: 2.5s;">∇</div>
+    <div class="math-symbol" style="top: 75%; right: 8%; animation-delay: 3.5s;">θ</div>
+    <div class="math-symbol" style="top: 25%; right: 25%; animation-delay: 4s;">λ</div>
+    <div class="math-symbol" style="top: 65%; left: 30%; animation-delay: 1.2s;">α</div>
+    
+    <div class="container mx-auto px-4 py-8">
+      <!-- Header -->
+      <header class="flex justify-between items-center mb-8 fade-in" style="animation-delay: 0.1s;">
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white mr-3">
+            <i class="fas fa-square-root-alt text-xl"></i>
           </div>
-          <div class="grid grid-cols-2 gap-4">
-            <div>
-              <label class="block font-semibold mb-1">基本</label>
-              <input
-                id="lvl1" name="lvl1" type="number" min="0"
-                value="4"
-                class="w-full px-3 py-2 rounded border"
-              />
-            </div>
-            <div>
-              <label class="block font-semibold mb-1">応用</label>
-              <input
-                id="lvl2" name="lvl2" type="number" min="0"
-                value="1"
-                class="w-full px-3 py-2 rounded border"
-              />
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onclick="generateAndDownload()"
-            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded"
-          >
-            <i class="fa-solid fa-file-arrow-down mr-2"></i>
-            PDF生成＆ダウンロード
-          </button>
+          <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">美味な数学</h1>
         </div>
-      </form>
+        
+        <!-- Dark mode toggle -->
+        <button id="theme-toggle" class="p-3 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none transition-colors">
+          <i id="theme-toggle-icon" class="fas fa-moon"></i>
+        </button>
+      </header>
+
+      <div class="mb-10 max-w-2xl fade-in" style="animation-delay: 0.2s;">
+        <h2 class="text-xl font-medium mb-3">問題集ガチャ</h2>
+        <p class="text-lg opacity-80">数学と化学の問題を自動生成するツール。レベルを選んでPDFをダウンロードしましょう。</p>
+      </div>
+
+      <!-- Main grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- 漸化式ガチャ -->
+        <div class="card p-8 fade-in" style="animation-delay: 0.3s;">
+          <div class="flex items-center mb-6">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 mr-3">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h2 class="text-xl font-bold">漸化式ガチャ</h2>
+          </div>
+          <form onsubmit="return false;" data-category="漸化式">
+            <input type="hidden" name="category" value="漸化式">
+            <div class="space-y-6">
+              <div class="slide-in" style="animation-delay: 0.4s;">
+                <label class="block mb-2 font-medium">基本レベル</label>
+                <div class="number-input-container">
+                  <button type="button" class="number-btn" onclick="decrementValue(this.nextElementSibling)">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input name="lvl1" type="number" value="4" min="0"
+                    class="input-custom text-center w-full py-3 border-x-0 focus:ring-0" />
+                  <button type="button" class="number-btn" onclick="incrementValue(this.previousElementSibling)">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="slide-in" style="animation-delay: 0.5s;">
+                <label class="block mb-2 font-medium">応用レベル</label>
+                <div class="number-input-container">
+                  <button type="button" class="number-btn" onclick="decrementValue(this.nextElementSibling)">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input name="lvl2" type="number" value="1" min="0"
+                    class="input-custom text-center w-full py-3 border-x-0 focus:ring-0" />
+                  <button type="button" class="number-btn" onclick="incrementValue(this.previousElementSibling)">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <button class="btn w-full py-3 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-medium flex justify-center items-center space-x-2 mt-4 shadow-lg" onclick="generateAndDownload(this)">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDF生成＆ダウンロード</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- 積分法ガチャ -->
+        <div class="card p-8 fade-in" style="animation-delay: 0.4s;">
+          <div class="flex items-center mb-6">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400 mr-3">
+              <i class="fas fa-integral"></i>
+            </div>
+            <h2 class="text-xl font-bold">積分法ガチャ</h2>
+          </div>
+          <form onsubmit="return false;" data-category="積分法">
+            <input type="hidden" name="category" value="積分法">
+            <div class="space-y-6">
+              <div class="slide-in" style="animation-delay: 0.5s;">
+                <label class="block mb-2 font-medium">基本レベル</label>
+                <div class="number-input-container">
+                  <button type="button" class="number-btn" onclick="decrementValue(this.nextElementSibling)">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input name="lvl1" type="number" value="3" min="0"
+                    class="input-custom text-center w-full py-3 border-x-0 focus:ring-0" />
+                  <button type="button" class="number-btn" onclick="incrementValue(this.previousElementSibling)">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="slide-in" style="animation-delay: 0.6s;">
+                <label class="block mb-2 font-medium">応用レベル</label>
+                <div class="number-input-container">
+                  <button type="button" class="number-btn" onclick="decrementValue(this.nextElementSibling)">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input name="lvl2" type="number" value="1" min="0"
+                    class="input-custom text-center w-full py-3 border-x-0 focus:ring-0" />
+                  <button type="button" class="number-btn" onclick="incrementValue(this.previousElementSibling)">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <button class="btn w-full py-3 rounded-lg bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white font-medium flex justify-center items-center space-x-2 mt-4 shadow-lg" onclick="generateAndDownload(this)">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDF生成＆ダウンロード</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- 無機化学ガチャ -->
+        <div class="card p-8 fade-in" style="animation-delay: 0.5s;">
+          <div class="flex items-center mb-6">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400 mr-3">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h2 class="text-xl font-bold">無機化学ガチャ</h2>
+          </div>
+          <form onsubmit="return false;" data-category="無機化学">
+            <input type="hidden" name="category" value="無機化学">
+            <div class="space-y-6">
+              <div class="slide-in" style="animation-delay: 0.6s;">
+                <label class="block mb-2 font-medium">基本レベル</label>
+                <div class="number-input-container">
+                  <button type="button" class="number-btn" onclick="decrementValue(this.nextElementSibling)">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input name="lvl1" type="number" value="7" min="0"
+                    class="input-custom text-center w-full py-3 border-x-0 focus:ring-0" />
+                  <button type="button" class="number-btn" onclick="incrementValue(this.previousElementSibling)">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="slide-in" style="animation-delay: 0.7s;">
+                <label class="block mb-2 font-medium">応用レベル</label>
+                <div class="number-input-container">
+                  <button type="button" class="number-btn" onclick="decrementValue(this.nextElementSibling)">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input name="lvl2" type="number" value="0" min="0"
+                    class="input-custom text-center w-full py-3 border-x-0 focus:ring-0" />
+                  <button type="button" class="number-btn" onclick="incrementValue(this.previousElementSibling)">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <button class="btn w-full py-3 rounded-lg bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-medium flex justify-center items-center space-x-2 mt-4 shadow-lg" onclick="generateAndDownload(this)">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDF生成＆ダウンロード</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info section -->
+      <div class="mt-12 fade-in" style="animation-delay: 0.6s;">
+        <div class="card p-8">
+          <h3 class="text-lg font-bold mb-4 flex items-center">
+            <i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+            使い方
+          </h3>
+          <ol class="list-decimal pl-5 space-y-2">
+            <li>カテゴリを選択（漸化式、積分法、無機化学）</li>
+            <li>基本レベルと応用レベルの問題数を設定</li>
+            <li>「PDF生成＆ダウンロード」ボタンをクリック</li>
+            <li>生成されたPDFを保存または印刷</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800 text-center opacity-80 fade-in" style="animation-delay: 0.8s;">
+        <p class="text-sm">美味な数学 &copy; 2023 - 数学と化学の問題集を簡単に生成</p>
+      </footer>
     </div>
   </div>
-
+  
   <script>
-    async function generateAndDownload() {
-      // ① まず新規タブだけ開いておく(空ページ)
+    // Initialize theme based on user preference
+    document.addEventListener('DOMContentLoaded', () => {
+      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDarkMode) {
+        enableDarkMode();
+      } else {
+        enableLightMode();
+      }
+    });
+
+    // Dark mode toggle
+    document.getElementById('pdf-btn').addEventListener('click', () => {
+    // 1. ユーザー操作直後に空ウィンドウを開く
+    const popup = window.open('', '_blank');
+    // 2. PDF生成リクエスト
+    fetch('/api/pdf')
+      .then(r => r.blob())
+      .then(blob => {
+        const url = URL.createObjectURL(blob);
+        // 3. 空ウィンドウにPDFを表示
+        popup.location.href = url;
+      })
+      .catch(() => {
+        // エラーならウィンドウを閉じる
+        popup.close();
+      });
+  });
+
+    function enableDarkMode() {
+      document.body.classList.remove('light-mode');
+      document.body.classList.add('dark-mode');
+      document.getElementById('theme-toggle-icon').classList.remove('fa-moon');
+      document.getElementById('theme-toggle-icon').classList.add('fa-sun');
+    }
+
+    function enableLightMode() {
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
+      document.getElementById('theme-toggle-icon').classList.remove('fa-sun');
+      document.getElementById('theme-toggle-icon').classList.add('fa-moon');
+    }
+
+    // Increment and decrement functions
+    function incrementValue(input) {
+      let value = parseInt(input.value) || 0;
+      input.value = value + 1;
+    }
+
+    function decrementValue(input) {
+      let value = parseInt(input.value) || 0;
+      if (value > 0) {
+        input.value = value - 1;
+      }
+    }
+
+    // Generate and download function (maintaining original functionality)
+    async function generateAndDownload(btn) {
+      const form = btn.closest('form');
+      const data = new URLSearchParams(new FormData(form));
+      
+      // Show loading state
+      const originalContent = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin spinner"></i> <span>処理中...</span>';
+      btn.disabled = true;
+      
       const pdfWin = window.open('', '_blank');
       if (!pdfWin) {
-        alert('ポップアップがブロックされています。許可してください。');
+        alert('ポップアップを許可してください');
+        btn.innerHTML = originalContent;
+        btn.disabled = false;
         return;
       }
-      pdfWin.document.write('<p>PDFを生成中…<p>');
-
-      // ② フォームをURLエンコードで送信
-      const params = new URLSearchParams({
-        category: document.getElementById('category').value,
-        lvl1:     document.getElementById('lvl1').value,
-        lvl2:     document.getElementById('lvl2').value,
-      });
-      const res = await fetch('/generate-mix', {
-        method: 'POST',
-        headers: {'Content-Type':'application/x-www-form-urlencoded'},
-        body: params.toString()
-      });
-      if (!res.ok) {
+      
+      pdfWin.document.write(`
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: 'Noto Sans JP', sans-serif;">
+          <div style="text-align: center;">
+            <div style="border: 4px solid #f3f3f3; border-top: 4px solid #4f46e5; border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+            <p style="font-size: 18px;">PDFを生成中...</p>
+            <p style="color: #666; margin-top: 10px;">しばらくお待ちください</p>
+          </div>
+        </div>
+        <style>
+          @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+          @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+        </style>
+      `);
+      
+      try {
+        const res = await fetch('/generate-mix', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+          body: data.toString()
+        });
+        
+        if (!res.ok) {
+          pdfWin.close();
+          alert('PDF生成に失敗しました');
+          return;
+        }
+        
+        pdfWin.location.href = `/output.pdf?ts=${Date.now()}`;
+      } catch (error) {
         pdfWin.close();
-        alert('PDF生成に失敗しました');
-        return;
+        alert('エラーが発生しました: ' + error.message);
+      } finally {
+        btn.innerHTML = originalContent;
+        btn.disabled = false;
       }
-
-      // ③ 生成完了後、そのタブにPDFを読み込ませる
-      const pdfUrl = `/output.pdf?ts=${Date.now()}`;
-      pdfWin.location.href = pdfUrl;
     }
   </script>
 </body>

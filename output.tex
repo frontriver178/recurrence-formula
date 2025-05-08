@@ -1,51 +1,40 @@
 \documentclass[10pt]{ltjarticle}
-\usepackage[a4paper,
-          left=15mm,
-          right=15mm,
-          top=15mm,
-          bottom=20mm,   
-          footskip=10mm  
-         ]{geometry}
+\usepackage[a4paper,left=15mm,right=15mm,top=15mm,bottom=20mm,footskip=10mm]{geometry}
 \usepackage{luatexja,amsmath,amssymb,enumitem}
+\usepackage{mhchem}
 \renewcommand{\d}{\displaystyle}
-\setlist[enumerate]{%
-itemsep=1.5\baselineskip, % 項目と項目の間
-topsep=1\baselineskip,     % リスト直前・直後の余白
-}
+\setlist[enumerate]{itemsep=1.5\baselineskip,topsep=1\baselineskip}
 
-\title{定着度確認テスト【数列】}
-\date{\today}
+\title{【無機化学ガチャ】}
+\date{\empty}
 \author{阪大数学bot}
 
 \begin{document}
 \maketitle
-学年\ \ :\\[5pt]
-
-氏名\ \ :
 
 \section*{問題}
-
-次の問いに答えよ.ただし,漸化式が与えられているものについては一般項を$n$を用いて表せ.また解答例に問題番号が書かれている場合はFocusGoldの対応する問題番号の解答を参照せよ.
+次の反応の化学反応式を答えよ.
 
 \begin{enumerate}[label=\textbf{\fbox{\arabic*}}]
-  \item \(a_1=1,\;a_2=3,\;a_{n+2}=5a_{n+1}+6a_n\)
-  \item \(a_1=4,\;a_{n+1}-a_n=-2\)
-  \item \(a_1=2,\;a_{n+1}^{\frac{1}{2}}=4a_n^3\)
-  \item \(a_1=2,\;a_{n+1}=a_n+6n-1\)
-  \item \((x+y+z)^n\)を展開したとき、項の個数、特定項の係数の和を求めよ。
+  \item 単体のアルミニウムが水酸化ナトリウムに溶ける反応
+  \item 硫酸銅(II)水溶液に硫化水素を通じたときの反応
+  \item 塩化銅(II)水溶液に水酸化ナトリウムを加える反応
+  \item 水酸化ナトリウムの固体が二酸化炭素を吸収する反応
+  \item オゾンとヨウ化カリウムとの反応（ヨウ化カリウムデンプン紙→青変）
+  \item 過酸化水素と酸化マンガン(IV)との反応
+  \item 消石灰に塩素を吸収させる反応
 \end{enumerate}
-
-\bigskip
 
 \newpage
 \section*{解答}
-オリジナル解答解説は精神誠意作成中です.
 \begin{enumerate}[label=\textbf{\fbox{\arabic*}}]
-  \item 練習問題300(1)
-  \item \(a_n = 6 - 2n\)
-  \item 例題294
-  \item \(a_n = 3n^2 - 4n + 3\)
-  \item 練習307 (二項展開・項数と係数の和)
+  \item \ce{2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2}
+  \item \ce{CuSO4 + H2S -> CuS + H2SO4}
+  \item \ce{CuCl2 + 2NaOH -> Cu(OH)2 + 2NaCl}
+  \item \ce{2NaOH + CO2 -> Na2CO3 + H2O}
+  \item \ce{O3 + 2KI + H2O -> O2 + I2 + 2KOH}
+  \item \ce{2H2O2 -> O2 + 2H2O}
+  \item \ce{Ca(OH)2 + Cl2 -> CaCl(ClO){·}H2O}
 \end{enumerate}
 
 \end{document}

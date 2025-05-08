@@ -1,0 +1,133 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>阪大数学bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind, FontAwesome -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: linear-gradient(135deg,#2563eb 0%,#38bdf8 100%);
+      min-height:100vh; color:#222;
+    }
+    .glass {
+      background:rgba(255,255,255,0.85);
+      border-radius:1.5rem;
+      box-shadow:0 8px 32px rgba(31,38,135,0.1);
+      backdrop-filter:blur(8px);
+      border:1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+	<div class="min-h-screen p-4">
+	  <!-- 2列以上に広げたいなら md:grid-cols-2 / lg:grid-cols-3 など -->
+	  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+		
+		<!-- 漸化式ガチャ -->
+		<div class="glass p-6">
+		  <h2 class="text-xl font-bold mb-2">漸化式ガチャ</h2>
+		  <form onsubmit="return false;" data-category="漸化式">
+			<input type="hidden" name="category" value="漸化式">
+			<div class="space-y-4">
+			  <div>
+				<label class="block mb-1">基本</label>
+				<input name="lvl1" type="number" value="2" min="0"
+					   class="w-full px-3 py-2 rounded border" />
+			  </div>
+			  <div>
+				<label class="block mb-1">応用</label>
+				<input name="lvl2" type="number" value="1" min="0"
+					   class="w-full px-3 py-2 rounded border" />
+			  </div>
+			  <button class="w-full py-2 rounded bg-blue-600 text-white"
+					  onclick="generateAndDownload(this)">
+				PDF生成＆ダウンロード
+			  </button>
+			</div>
+		  </form>
+		</div>
+		
+		<!-- 積分法ガチャ -->
+		<div class="glass p-6">
+		  <h2 class="text-xl font-bold mb-2">積分法ガチャ</h2>
+		  <form onsubmit="return false;" data-category="積分法">
+			<input type="hidden" name="category" value="積分法">
+			<div class="space-y-4">
+				<div>
+				  <label class="block mb-1">基本</label>
+				  <input name="lvl1" type="number" value="2" min="0"
+						 class="w-full px-3 py-2 rounded border" />
+				</div>
+				<div>
+				  <label class="block mb-1">応用</label>
+				  <input name="lvl2" type="number" value="1" min="0"
+						 class="w-full px-3 py-2 rounded border" />
+				</div>
+				<button class="w-full py-2 rounded bg-blue-600 text-white"
+						onclick="generateAndDownload(this)">
+				  PDF生成＆ダウンロード
+				</button>
+			  </div>
+		  </form>
+		</div>
+		
+		<!-- 無機化学ガチャ -->
+		<div class="glass p-6">
+		  <h2 class="text-xl font-bold mb-2">無機化学ガチャ</h2>
+		  <form onsubmit="return false;" data-category="無機化学">
+			<input type="hidden" name="category" value="無機化学">
+			<div class="space-y-4">
+				<div>
+				  <label class="block mb-1">基本</label>
+				  <input name="lvl1" type="number" value="2" min="0"
+						 class="w-full px-3 py-2 rounded border" />
+				</div>
+				<div>
+				  <label class="block mb-1">応用</label>
+				  <input name="lvl2" type="number" value="1" min="0"
+						 class="w-full px-3 py-2 rounded border" />
+				</div>
+				<button class="w-full py-2 rounded bg-blue-600 text-white"
+						onclick="generateAndDownload(this)">
+				  PDF生成＆ダウンロード
+				</button>
+			  </div>
+		  </form>
+		</div>
+		
+	  </div>
+	</div>
+	
+	<script>
+	  async function generateAndDownload(btn) {
+		const form = btn.closest('form');
+		const data = new URLSearchParams(new FormData(form));
+		const pdfWin = window.open('', '_blank');
+		if (!pdfWin) { alert('ポップアップ許可してください'); return; }
+		pdfWin.document.write('<p>PDFを生成中…</p>');
+		const res = await fetch('/generate-mix', {
+		  method: 'POST',
+		  headers: {'Content-Type':'application/x-www-form-urlencoded'},
+		  body: data.toString()
+		});
+		if (!res.ok) {
+		  pdfWin.close();
+		  alert('PDF生成に失敗しました');
+		  return;
+		}
+		pdfWin.location.href = `/output.pdf?ts=${Date.now()}`;
+	  }
+	</script>
+</body>  
+</html>
