@@ -106,8 +106,6 @@ app.get('/download', (req, res) => {
 
 // サーバー起動
 const PORT = process.env.PORT || 3000;
-const server = app.listen(PORT, () => {
-  const { address, port } = server.address();
-  const host = (address === '::' || address === '0.0.0.0') ? 'localhost' : address;
-  console.log(`▶️ サーバー起動: http://${host}:${port}`);
+app.listen(PORT, () => {
+  console.log(`▶️ サーバー起動: http://0.0.0.0:${PORT}`);
 });
