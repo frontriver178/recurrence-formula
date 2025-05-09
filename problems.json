@@ -1,0 +1,1583 @@
+[
+  {
+    "id": "A1-01",
+    "title": "数列1",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_{n+1}-a_n=4\\)",
+    "answer": "\\(a_n = 1 + 4(n-1)\\)"
+  },
+  {
+    "id": "A1-02",
+    "title": "数列2",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=3,\\quad a_{n+1}+2a_n=0\\)",
+    "answer": "\\(a_n = 3\\cdot(-2)^{n-1}\\)"
+  },
+  {
+    "id": "A1-03",
+    "title": "数列3",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\quad a_{n+1}=a_n+6n-1\\)",
+    "answer": "\\(a_n = 3n^2 - 4n + 3\\)"
+  },
+  {
+    "id": "A1-04",
+    "title": "数列4",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=4,\\quad a_{n+1}-a_n=-2\\)",
+    "answer": "\\(a_n = 6 - 2n\\)"
+  },
+  {
+    "id": "A1-05",
+    "title": "数列5",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=5,\\quad a_{n+1}=3a_n\\)",
+    "answer": "\\(a_n = 5\\cdot3^{n-1}\\)"
+  },
+  {
+    "id": "A1-06",
+    "title": "例題291",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\quad a_{n+1}=2a_n+1\\)",
+    "answer": "\\(a_n = 3\\cdot2^{n-1} - 1\\)"
+  },
+  {
+    "id": "A1-07",
+    "title": "例題292",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=3,\\quad a_{n+1}=3a_n+2n+3\\)",
+    "answer": "\\(a_n = 2\\cdot3^{n-1} - n - 2\\)"
+  },
+  {
+    "id": "A1-08",
+    "title": "例題293",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_{n+1}=3a_n+2^n\\)",
+    "answer": "\\(a_n = 3^n - 2^n\\)"
+  },
+  {
+    "id": "A1-09",
+    "title": "例題294",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\quad a_{n+1}^{\\frac{1}{2}}=4a_n^3\\)",
+    "answer": "\\(a_n = 2^{\\frac{3^n - 2^n}{2^{n-1}}}\\)"
+  },
+  {
+    "id": "A1-10",
+    "title": "練習問題291(1)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_{n+1}=2a_n-6\\)",
+    "answer": "\\(a_n = -5\\cdot2^{n-1}+6\\)"
+  },
+  {
+    "id": "A1-11",
+    "title": "練習問題291(2)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_{n+1}=\\d\\frac{1}{3}a_n+1\\)",
+    "answer": "\\(a_n = -\\dfrac{1}{2}\\left( \\dfrac{1}{3} \\right)^{n-1} + \\dfrac{3}{2}\\)"
+  },
+  {
+    "id": "A1-12",
+    "title": "練習問題292",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\quad a_{n+1}=2a_n-2n+1\\quad(n=1,2,3,\\ldots)\\)",
+    "answer": "\\(a_n = -2^{n-1} +2n +1\\)"
+  },
+  {
+    "id": "A1-13",
+    "title": "練習問題293",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=0,\\quad a_{n+1}=4a_n-2^{n+1}\\)",
+    "answer": "\\(-2^{2n-1} + 2^n\\)"
+  },
+  {
+    "id": "A1-14",
+    "title": "練習問題294(1)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_{n+1}=\\d\\frac{1}{\\sqrt{2}}a_n^2\\)",
+    "answer": "\\(a_n = 2^{\\frac{1}{2} - 2^{n-2}}\\)"
+  },
+  {
+    "id": "A1-15",
+    "title": "練習問題294(2)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=4,\\quad a_{n+1}=8\\sqrt{a_n}\\)",
+    "answer": "\\(2^{-2^{3-n}+6}\\)"
+  },
+  {
+    "id": "A1-16",
+    "title": "例題297",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=\\d\\frac{1}{2},\\quad a_{n+1}=\\d\\frac{a_n}{2-a_n}\\)",
+    "answer": "\\(a_n = \\dfrac{1}{2^{n-1}+1}\\)"
+  },
+  {
+    "id": "A1-17",
+    "title": "練習問題297",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=\\d\\frac{1}{2},\\quad a_{n+1}=\\d\\frac{a_n}{3a_n+1}\\)",
+    "answer": "\\(a_n = \\dfrac{1}{3n-1}\\)"
+  },
+  {
+    "id": "A1-18",
+    "title": "例題298",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=8,\\quad a_{n+1}=\\d\\frac{3a_n+2}{a_n+2}\\)",
+    "answer": "\\(a_n = \\dfrac{6\\cdot 4^n +8}{3\\cdot 4^n -8}\\)"
+  },
+  {
+    "id": "A1-19",
+    "title": "練習問題298",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\quad a_{n+1}=\\d\\frac{4a_n+1}{2a_n+3}\\)",
+    "answer": "\\(a_n = \\dfrac{5^n + 2^{n-1}}{5^n -2^n}\\)"
+  },
+  {
+    "id": "A1-20",
+    "title": "例題295",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad n a_{n+1}=(n+1)a_n+1\\)",
+    "answer": "\\(a_n = 2n-1\\)"
+  },
+  {
+    "id": "A1-21",
+    "title": "練習問題295",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=2,\\quad n a_{n+1}=(n+1)a_n+3\\)",
+    "answer": "\\(a_n = 5n-3\\)"
+  },
+  {
+    "id": "A1-22",
+    "title": "例題296",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad (n+3)a_{n+1}=n a_n\\)",
+    "answer": "\\(a_n = \\dfrac{6}{n(n+1)(n+2)}\\)"
+  },
+  {
+    "id": "A1-23",
+    "title": "練習問題296",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "数列 \\(\\{a_n\\}\\) の初項から第 \\(n\\) 項までの和を \\(S_n\\) とするとき，\\(S_n=n^2a_n\\) が成り立っている。\\(a_1=1\\) として \\(a_n\\) と \\(S_n\\) を \\(n\\) を用いて表せ。",
+    "answer": "\\(a_n = \\dfrac{2}{n(n+1)},\\quad S_n = \\dfrac{2n}{n+1}\\)"
+  },
+  {
+    "id": "A1-24",
+    "title": "例題299",
+    "category": "漸化式",
+    "difficulty": 2,
+    "latex": "数列 $\\{a_n\\}$ の初項から第 $n$ 項までの和を $S_n$ とするとき、$3S_n = a_n + 7\\cdot 3^n - 6$ が成り立つ。次の問いに答えよ。\\begin{enumerate}[label=(\\arabic*)]\n\\item $a_1$ を求めよ。\n\\item $a_{n+1}$ を $a_n$ を用いて表せ。\n\\item $a_n$ を $n$ を用いて表せ。\n\\end{enumerate}",
+    "answer": "\\begin{enumerate}[label=(\\arabic*)] \n \\item \\(a_1 = \\dfrac{15}{2}\\) \n \\item \\(a_{n+1} = -\\dfrac{1}{2}a_n + 7 \\cdot 3^n\\) \n \\item \\(a_n = 3^n \\left\\{ \\dfrac{1}{2}\\left( -\\dfrac{1}{6} \\right)^{n-1} +2 \\right\\}\\) \n \\end{enumerate}"
+  },
+  {
+    "id": "A1-25",
+    "title": "例題300(1)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_2=2,\\quad a_{n+2}-2a_{n+1}-15a_n=0\\)",
+    "answer": "\\(a_n = \\dfrac{5^n - (-3)^n}{8}\\)"
+  },
+  {
+    "id": "A1-26",
+    "title": "例題300(2)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=3,\\quad a_2=5,\\quad a_{n+2}-3a_{n+1}+2a_n=0\\)",
+    "answer": "\\(a_n = 2^n +1\\)"
+  },
+  {
+    "id": "A1-27",
+    "title": "例題301",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_2=2,\\quad a_{n+2}-6a_{n+1}+9a_n=0\\)",
+    "answer": "\\(a_n = -(n-4)\\cdot 3^{n-2}\\)"
+  },
+  {
+    "id": "A1-28",
+    "title": "練習問題300(1)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_2=3,\\quad a_{n+2}=5a_{n+1}+6a_n\\)",
+    "answer": "\\(a_n = \\dfrac{4\\cdot 6^{n-1} + 3\\cdot (-1)^{n-1}}{7}\\)"
+  },
+  {
+    "id": "A1-29",
+    "title": "練習問題300(2)",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_2=2,\\quad a_{n+2}=\\sqrt{n}a_{n+1}a_n\\)",
+    "answer": "\\(a_n = 2^{\\dfrac{2}{3}\\left(1 - \\left(- \\dfrac{1}{2}\\right)^{n-1}\\right)}\\)"
+  },
+  {
+    "id": "A1-30",
+    "title": "練習問題301",
+    "category": "漸化式",
+    "difficulty": 1,
+    "latex": "\\(a_1=1,\\quad a_2=3,\\quad a_{n+2}-4a_{n+1}+4a_n=0\\)",
+    "answer": "\\(a_n = (n+1)\\cdot 2^{n-2}\\)"
+  },
+  {
+    "id": "A1-31",
+    "title": "例題303",
+    "category": "漸化式",
+    "difficulty": 2,
+    "latex": "\\(a_1=1,\\quad b_1=3,\\;a_{n+1}=3a_n+b_n,\\quad b_{n+1}=2a_n+4b_n\\)",
+    "answer": "\\(a_n = \\dfrac{4}{3}\\cdot 5^{n-1} - \\dfrac{1}{3}\\cdot 2^{n-1}, \\quad b_n= \\dfrac{8}{3}\\cdot 5^{n-1} + \\dfrac{1}{3}\\cdot 2^{n-1}\\)"
+  },
+  {
+    "id": "A1-32",
+    "title": "練習問題303",
+    "category": "漸化式",
+    "difficulty": 2,
+    "latex": "2つの数列 $x_n$, $y_n$ があり、$x_1=1,\\quad y_1=1$, $x_{n+1}=7x_n+6y_n+4$, $y_{n+1}=-4x_n-3y_n-2$ が定義されている。次の問いに答えよ。\\begin{enumerate}[label=(\\arabic*)]\n\\item $x_2$, $x_3$ を求めよ。\n\\item $a_n=x_n+y_n,\\quad b_n=2x_n+3y_n$ と定義して一般項を求めよ。\n\\item $x_n$, $y_n$ の一般項を求めよ。\n\\end{enumerate}",
+    "answer": "\\begin{enumerate}[label=(\\arabic*)] \n \\item \\(x_2=17,\\quad x_3=69\\) \n \\item \\(a_n=3^n,\\quad b_n=2n+3\\) \n \\item \\(x_n=3^{n+1}-2n-6,\\quad y_n=-2\\cdot3^n+2n+5\\) \n \\end{enumerate}"
+  },
+  {
+    "id": "A1-33",
+    "title": "例題304",
+    "category": "漸化式",
+    "difficulty": 2,
+    "latex": "自然数列 $a_n$, $b_n$ は $(3+\\sqrt{2})^n = a_n + b_n \\sqrt{2}$ を満たす。次の問いに答えよ。\\begin{enumerate}[label=(\\arabic*)]\n\\item $a_{n+1}$, $b_{n+1}$ を $a_n,\\;b_n$ を使って表せ。\n\\item $c_n = a_n - b_n \\sqrt{2}$ とするとき、一般項を求めよ。\n\\item $a_n$, $b_n$ の一般項を求めよ。\n\\end{enumerate}",
+    "answer": "\\begin{enumerate}[label=(\\arabic*)] \n \\item \\(a_{n+1}=2a_n+3b_n,\\quad b_{n+1}=a_n+2b_n\\) \n \\item \\((\\alpha,\\beta)=(\\sqrt{3},2+\\sqrt{3}),(-\\sqrt{3},2-\\sqrt{3})\\) \n \\item \\(a_n=\\dfrac12\\{(2+\\sqrt{3})^n+(2-\\sqrt{3})^n\\},\\quad b_n=\\dfrac{\\sqrt{3}}6\\{(2+\\sqrt{3})^n-(2-\\sqrt{3})^n\\}\\)\\end{enumerate}"
+  },{
+    "id": "E226-01",
+    "title": "例題226-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\sqrt{x} \\, dx\\)",
+    "answer": "（解答：例題226-1）"
+  },
+  {
+    "id": "E226-02",
+    "title": "例題226-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{(x-1)^2}{x} \\, dx\\)",
+    "answer": "（解答：例題226-2）"
+  },
+  {
+    "id": "E226-03",
+    "title": "例題226-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int 3^{x+1} \\, dx\\)",
+    "answer": "（解答：例題226-3）"
+  },
+  {
+    "id": "E226-04",
+    "title": "例題226-4",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\tan^2 x \\, dx\\)",
+    "answer": "（解答：例題226-4）"
+  },
+  {
+    "id": "E226-05",
+    "title": "例題226-5",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\cos^2 \\dfrac{x}{2} \\, dx\\)",
+    "answer": "（解答：例題226-5）"
+  },
+  {
+    "id": "E226-06",
+    "title": "例題226-6",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\sin 3x \\cos x \\, dx\\)",
+    "answer": "（解答：例題226-6）"
+  },
+  {
+    "id": "E227-01",
+    "title": "例題227-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int (5x - 3)^3 \\, dx\\)",
+    "answer": "（解答：例題227-1）"
+  },
+  {
+    "id": "E227-02",
+    "title": "例題227-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\sqrt{1 - 4x} \\, dx\\)",
+    "answer": "（解答：例題227-2）"
+  },
+  {
+    "id": "E227-03",
+    "title": "例題227-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int e^{2x + 3} \\, dx\\)",
+    "answer": "（解答：例題227-3）"
+  },
+  {
+    "id": "E227-04",
+    "title": "例題227-4",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\cos(2x - 1) \\, dx\\)",
+    "answer": "（解答：例題227-4）"
+  },
+  {
+    "id": "E228-01",
+    "title": "例題228-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{x}{x^2 + x - 6} \\, dx\\)",
+    "answer": "（解答：例題228-1）"
+  },
+  {
+    "id": "E228-02",
+    "title": "例題228-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{1}{x(x - 1)} \\, dx\\)",
+    "answer": "（解答：例題228-2）"
+  },
+  {
+    "id": "E228-03",
+    "title": "例題228-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{2x^3}{x^2 - 1} \\, dx\\)",
+    "answer": "（解答：例題228-3）"
+  },
+  {
+    "id": "E229-01",
+    "title": "例題229-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int x(2x - 1)^5 \\, dx\\)",
+    "answer": "（解答：例題229-1）"
+  },
+  {
+    "id": "E229-02",
+    "title": "例題229-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{1}{\\sqrt{x - 1}} \\, dx\\)",
+    "answer": "（解答：例題229-2）"
+  },
+  {
+    "id": "E230-01",
+    "title": "例題230-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int 3x^2 e^{x^3} \\, dx\\)",
+    "answer": "（解答：例題230-1）"
+  },
+  {
+    "id": "E230-02",
+    "title": "例題230-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int x \\sqrt{x^2 - 3} \\, dx\\)",
+    "answer": "（解答：例題230-2）"
+  },
+  {
+    "id": "E230-03",
+    "title": "例題230-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\sin^3 x \\cos x \\, dx\\)",
+    "answer": "（解答：例題230-3）"
+  },
+  {
+    "id": "E231-01",
+    "title": "例題231-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{3x^2}{x^3 + 1} \\, dx\\)",
+    "answer": "（解答：例題231-1）"
+  },
+  {
+    "id": "E231-02",
+    "title": "例題231-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{e^x}{e^x + 1} \\, dx\\)",
+    "answer": "（解答：例題231-2）"
+  },
+  {
+    "id": "E231-03",
+    "title": "例題231-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\tan x \\, dx\\)",
+    "answer": "（解答：例題231-3）"
+  },
+  {
+    "id": "E232-01",
+    "title": "例題232-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\cos^3 x \\, dx\\)",
+    "answer": "（解答：例題232-1）"
+  },
+  {
+    "id": "E232-02",
+    "title": "例題232-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{1}{\\cos x} \\, dx\\)",
+    "answer": "（解答：例題232-2）"
+  },
+  {
+    "id": "E233",
+    "title": "例題233",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\begin{enumerate}[label=(\\arabic*)] \n \\item \\(t = \\tan\\dfrac{x}{2} \\text{ のとき，} \\sin x \\text{ を } t \\text{ を用いて表せ．}\\) \n \\item \\(\\d\\int \\dfrac{1}{4 + 5\\sin x} \\, dx\\) \n \\end{enumerate}",
+    "answer": "（解答：例題233-1）"
+  },
+  {
+    "id": "E234-01",
+    "title": "例題234-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{dx}{x\\sqrt{x^2+1}} \\quad (t = \\sqrt{x^2+1})\\)",
+    "answer": "（解答：例題234-1）"
+  },
+  {
+    "id": "E234-02",
+    "title": "例題234-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\dfrac{dx}{\\sqrt{x^2+4}} \\quad (t = x + \\sqrt{x^2+4})\\)",
+    "answer": "（解答：例題234-2）"
+  },
+  {
+    "id": "E235-01",
+    "title": "例題235-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int (3x + 1)\\sin x \\, dx\\)",
+    "answer": "（解答：例題235-1）"
+  },
+  {
+    "id": "E235-02",
+    "title": "例題235-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int xe^{-2x} \\, dx\\)",
+    "answer": "（解答：例題235-2）"
+  },
+  {
+    "id": "E235-03",
+    "title": "例題235-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int x^3 \\log x \\, dx\\)",
+    "answer": "（解答：例題235-3）"
+  },
+  {
+    "id": "E235-04",
+    "title": "例題235-4",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int e^{\\sqrt{x}} \\, dx\\)",
+    "answer": "（解答：例題235-4）"
+  },
+  {
+    "id": "E236-01",
+    "title": "例題236-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int \\log x \\, dx\\)",
+    "answer": "（解答：例題236-1）"
+  },
+  {
+    "id": "E236-02",
+    "title": "例題236-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int x^2 e^x \\, dx\\)",
+    "answer": "（解答：例題236-2）"
+  },
+  {
+    "id": "E237-01",
+    "title": "例題237-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int e^x \\cos 2x \\, dx\\)",
+    "answer": "（解答：例題237-1）"
+  },{
+    "id": "E238-01",
+    "title": "例題238-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_1^4 \\dfrac{(\\sqrt{x} - 2)^2}{x} \\, dx\\)",
+    "answer": "（解答：例題238-1）"
+  },
+  {
+    "id": "E238-02",
+    "title": "例題238-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^{\\frac{\\pi}{2}} (\\sin 2x + \\cos 3x) \\, dx\\)",
+    "answer": "（解答：例題238-2）"
+  },
+  {
+    "id": "E238-03",
+    "title": "例題238-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^1 \\dfrac{dx}{x^2 - 9}\\)",
+    "answer": "（解答：例題238-3）"
+  },
+  {
+    "id": "E239-01",
+    "title": "例題239-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^6 \\sqrt{|x - 3|} \\, dx\\)",
+    "answer": "（解答：例題239-1）"
+  },
+  {
+    "id": "E239-02",
+    "title": "例題239-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^\\pi |\\sin 2x| \\, dx\\)",
+    "answer": "（解答：例題239-2）"
+  },
+  {
+    "id": "E240-01",
+    "title": "例題240-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_{-1}^0 (x+2)\\sqrt{3x+4} \\, dx\\)",
+    "answer": "（解答：例題240-1）"
+  },
+  {
+    "id": "E240-02",
+    "title": "例題240-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}} \\dfrac{\\sin^3 x}{\\cos^2 x} \\, dx\\)",
+    "answer": "（解答：例題240-2）"
+  },
+  {
+    "id": "E240-03",
+    "title": "例題240-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_e^{e^e} \\dfrac{\\log(\\log x)}{x \\log x} \\, dx\\)",
+    "answer": "（解答：例題240-3）"
+  },
+  {
+    "id": "E241-01",
+    "title": "例題241-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^1 \\dfrac{3x^2 - 1}{x^3 - x + 1} \\, dx\\)",
+    "answer": "（解答：例題241-1）"
+  },
+  {
+    "id": "E241-02",
+    "title": "例題241-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^e \\dfrac{dx}{x \\log x}\\)",
+    "answer": "（解答：例題241-2）"
+  },
+  {
+    "id": "E241-03",
+    "title": "例題241-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^{\\frac{\\pi}{3}} \\tan x \\, dx\\)",
+    "answer": "（解答：例題241-3）"
+  },
+  {
+    "id": "E242-01",
+    "title": "例題242-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^2 \\sqrt{16 - x^2} \\, dx\\)",
+    "answer": "（解答：例題242-1）"
+  },
+  {
+    "id": "E242-02",
+    "title": "例題242-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^3 \\dfrac{dx}{\\sqrt{36 - x^2}}\\)",
+    "answer": "（解答：例題242-2）"
+  },
+  {
+    "id": "E242-03",
+    "title": "例題242-3",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^1 \\dfrac{dx}{1 + x^2}\\)",
+    "answer": "（解答：例題242-3）"
+  },
+  {
+    "id": "E243-01",
+    "title": "例題243-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_{-\\frac{\\pi}{4}}^{\\frac{\\pi}{4}} \\sin^2 x (\\sin x + \\cos x) \\, dx\\)",
+    "answer": "（解答：例題243-1）"
+  },
+  {
+    "id": "E243-02",
+    "title": "例題243-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_{-3}^3 \\dfrac{2^{2x}-1}{2^x} dx\\)",
+    "answer": "（解答：例題243-2）"
+  },
+  {
+    "id": "E244-01",
+    "title": "例題244-1",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_0^{\\frac{\\pi}{4}} x \\sin 2x \\, dx\\)",
+    "answer": "（解答：例題244-1）"
+  },
+  {
+    "id": "E244-02",
+    "title": "例題244-2",
+    "category": "積分法",
+    "difficulty": 1,
+    "latex": "\\(\\d\\int_{\\alpha}^{\\beta} (x - \\alpha)(x - \\beta)^2 \\, dx\\)",
+    "answer": "（解答：例題244-2）"
+  },
+  {
+    "id": "E245-01",
+    "title": "例題245-1",
+    "category": "積分法",
+    "difficulty": 2,
+    "latex": "\\(\\d\\int_1^e x (\\log x)^2 \\, dx\\)",
+    "answer": "（解答：例題245-1）"
+  },
+  {
+    "id": "E245-02",
+    "title": "例題245-2",
+    "category": "積分法",
+    "difficulty": 2,
+    "latex": "\\(\\d\\int_4^{16} \\sqrt{x} e^{-\\sqrt{x}} \\, dx\\)",
+    "answer": "（解答：例題245-2）"
+  },
+  {
+    "id": "E246",
+    "title": "例題246",
+    "category": "積分法",
+    "difficulty": 2,
+    "latex": "定積分\\(I=\\d\\int_0^{\\frac{\\pi}{2}} e^x \\sin x dx, \\quad J=\\d\\int_0^{\\frac{\\pi}{2}} e^x \\cos x dx\\)を求めよ.",
+    "answer": "（解答：例題246）"
+  },
+  {
+    "id": "E247",
+    "title": "例題247",
+    "category": "積分法",
+    "difficulty": 2,
+    "latex": "\\begin{enumerate}[label=(\\arabic*)] \n \\item \\(\\d\\int_0^\\pi x f(\\sin x) \\, dx = \\dfrac{\\pi}{2} \\d\\int_0^\\pi f(\\sin x) \\, dx を示せ\\) \n \\item \\(\\d\\int_0^\\pi \\dfrac{x \\sin x}{3 + \\sin^2 x} \\, dx を求めよ\\) \n \\end{enumerate}",
+    "answer": "（解答：例題247）"
+  },
+  {
+    "id": "E248",
+    "title": "例題248",
+    "category": "積分法",
+    "difficulty": 2,
+    "latex": "\\(I_n = \\d\\int_0^{\\frac{\\pi}{2}} \\sin^n x \\, dx, \\quad J_n = \\d\\int_0^{\\frac{\\pi}{2}} \\cos^n x \\, dx \\, (n = 0, 1, 2, \\ldots)\\) \\begin{enumerate}[label=(\\arabic*)] \n \\item \\(I_n =J_nを示せ.\\) \n \\item \\(I_0, I_1 を求めよ.\\) \n \\item \\(I_n = \\dfrac{n - 1}{n} I_{n-2} \\, (n \\geq 2)を示せ.\\) \n \\item \\(I_n (n \\geq 2) を求めよ.\\) \n \\end{enumerate}",
+    "answer": "（解答：例題248）"
+  },
+  {
+    "id": "E249",
+    "title": "例題249",
+    "category": "積分法",
+    "difficulty": 2,
+    "latex": "\\begin{enumerate}[label=(\\arabic*)] \n \\item \\(I_{m,n} = \\d\\int_0^{\\frac{\\pi}{2}} \\sin^m x \\cos^n x \\, dx \\, (m, n \\in \\mathbb{N})\\) \n \\item \\(I_{m,n} = I_{n,m} を示せ.\\) \n \\item \\(I_{m,n} = \\dfrac{n - 1}{m + n} I_{m,n-2} \\, (n \\geq 2)を示せ.\\) \n \\end{enumerate}",
+    "answer": "（解答：例題249）"
+  },{
+    "id": "C1-1",
+    "title": "フッ素と水素との反応を記せ。",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "フッ素と水素との反応を記せ。",
+    "answer": "\\ce{H2 + F2 -> 2HF}"
+  },
+  {
+    "id": "C1-2",
+    "title": "フッ素と水との反応を記せ。",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "フッ素と水との反応を記せ。",
+    "answer": "\\ce{2F2 + 2H2O -> O2 + 4HF}"
+  },
+  {
+    "id": "C1-3",
+    "title": "塩素と水との反応を記せ。",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "塩素と水との反応を記せ。",
+    "answer": "\\ce{Cl2 + H2O -> HCl + HClO}"
+  },
+  {
+    "id": "C1-4",
+    "title": "次亜塩素酸の半反応式（酸化剤として）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "次亜塩素酸の半反応式（酸化剤として）",
+    "answer": "\\ce{HClO + H+ + 2e- -> Cl- + H2O}"
+  },
+  {
+    "id": "C1-5",
+    "title": "塩化銀のアンモニア水への溶解（イオン反応式）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "塩化銀のアンモニア水への溶解（イオン反応式）",
+    "answer": "\\ce{AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-}"
+  },
+  {
+    "id": "C1-6",
+    "title": "臭化銀のチオ硫酸ナトリウムへの溶解（イオン反応式）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "臭化銀のチオ硫酸ナトリウムへの溶解（イオン反応式）",
+    "answer": "\\ce{AgBr + 2S2O3^2- -> [Ag(S2O3)2]^3- + Br-}"
+  },
+  {
+    "id": "C1-7",
+    "title": "ヨウ化銀のシアン化カリウム水への溶解（イオン反応式）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ヨウ化銀のシアン化カリウム水への溶解（イオン反応式）",
+    "answer": "\\ce{AgI + 2CN- -> [Ag(CN)2]- + I-}"
+  },
+  {
+    "id": "C1-8",
+    "title": "臭化銀の感光反応を記せ",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "臭化銀の感光反応を記せ",
+    "answer": "\\ce{2AgBr -> 2Ag + Br2}"
+  },
+  {
+    "id": "C1-9",
+    "title": "ホタル石に濃硫酸を加えて加熱したときの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ホタル石に濃硫酸を加えて加熱したときの反応",
+    "answer": "\\ce{CaF2 + H2SO4 -> CaSO4 + 2HF}"
+  },
+  {
+    "id": "C1-10",
+    "title": "二酸化ケイ素と気体のフッ化水素との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化ケイ素と気体のフッ化水素との反応",
+    "answer": "\\ce{SiO2 + 4HF -> SiF4 + 2H2O}"
+  },
+  {
+    "id": "C1-11",
+    "title": "二酸化ケイ素とフッ化水素酸との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化ケイ素とフッ化水素酸との反応",
+    "answer": "\\ce{SiO2 + 6HF -> H2SiF6 + 2H2O}"
+  },
+  {
+    "id": "C1-12",
+    "title": "塩素と水酸化ナトリウムとの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "塩素と水酸化ナトリウムとの反応",
+    "answer": "\\ce{Cl2 + 2NaOH -> NaCl + NaClO + H2O}"
+  },
+  {
+    "id": "C1-13",
+    "title": "消石灰と塩素との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "消石灰と塩素との反応",
+    "answer": "\\ce{Ca(OH)2 + Cl2 -> CaCl(ClO){·}H2O}"
+  },
+  {
+    "id": "C1-14",
+    "title": "酸化マンガン(IV)に濃塩酸を加えて加熱",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化マンガン(IV)に濃塩酸を加えて加熱",
+    "answer": "\\ce{MnO2 + 4HCl -> MnCl2 + Cl2 + 2H2O}"
+  },
+  {
+    "id": "C1-15",
+    "title": "さらし粉に希塩酸を加えたときの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "さらし粉に希塩酸を加えたときの反応",
+    "answer": "\\ce{CaCl(ClO){·}H2O + 2HCl -> CaCl2 + Cl2 + 2H2O}"
+  },
+  {
+    "id": "C1-16",
+    "title": "塩化ナトリウムに濃硫酸を加えて加熱",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "塩化ナトリウムに濃硫酸を加えて加熱",
+    "answer": "\\ce{NaCl + H2SO4 -> NaHSO4 + HCl}"
+  },
+  {
+    "id": "C1-17",
+    "title": "塩化水素とアンモニアとの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "塩化水素とアンモニアとの反応",
+    "answer": "\\ce{HCl + NH3 -> NH4Cl}"
+  },
+  {
+    "id": "C1-18",
+    "title": "過酸化水素と酸化マンガン(IV)との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "過酸化水素と酸化マンガン(IV)との反応",
+    "answer": "\\ce{2H2O2 -> O2 + 2H2O}"
+  },
+  {
+    "id": "C1-19",
+    "title": "塩素酸カリウムの熱分解（触媒: MnO2）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "塩素酸カリウムの熱分解（触媒: MnO2）",
+    "answer": "\\ce{2KClO3 -> 2KCl + 3O2}"
+  },
+  {
+    "id": "C1-20",
+    "title": "酸素を無声放電したときの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸素を無声放電したときの反応",
+    "answer": "\\ce{3O2 -> 2O3}"
+  },
+  {
+    "id": "C1-21",
+    "title": "オゾンの半反応式（酸化剤として／中性条件）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "オゾンの半反応式（酸化剤として／中性条件）",
+    "answer": "\\ce{O3 + H2O + 2e- -> O2 + 2OH-}"
+  },
+  {
+    "id": "C1-22",
+    "title": "オゾンとヨウ化カリウムとの反応（ヨウ化カリウムデンプン紙→青変）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "オゾンとヨウ化カリウムとの反応（ヨウ化カリウムデンプン紙→青変）",
+    "answer": "\\ce{O3 + 2KI + H2O -> O2 + I2 + 2KOH}"
+  },
+  {
+    "id": "C1-23",
+    "title": "硫化鉄(II)と希硫酸との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "硫化鉄(II)と希硫酸との反応",
+    "answer": "\\ce{FeS + H2SO4 -> FeSO4 + H2S}"
+  },
+  {
+    "id": "C1-24",
+    "title": "硫化水素の半反応式（還元剤として／酸性条件下）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "硫化水素の半反応式（還元剤として／酸性条件下）",
+    "answer": "\\ce{H2S -> S + 2H+ + 2e-}"
+  },
+  {
+    "id": "C1-25",
+    "title": "銅と熱濃硫酸との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "銅と熱濃硫酸との反応",
+    "answer": "\\ce{Cu + 2H2SO4 -> CuSO4 + SO2 + 2H2O}"
+  },
+  {
+    "id": "C1-26",
+    "title": "亜硫酸ナトリウムと希硫酸との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "亜硫酸ナトリウムと希硫酸との反応",
+    "answer": "\\ce{Na2SO3 + H2SO4 -> Na2SO4 + SO2 + H2O}"
+  },
+  {
+    "id": "C1-27",
+    "title": "二酸化硫黄の半反応式（酸化剤として／酸性条件下）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化硫黄の半反応式（酸化剤として／酸性条件下）",
+    "answer": "\\ce{SO2 + 4H+ + 4e- -> S + 2H2O}"
+  },
+  {
+    "id": "C1-28",
+    "title": "二酸化硫黄の半反応式（還元剤として／酸性条件下）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化硫黄の半反応式（還元剤として／酸性条件下）",
+    "answer": "\\ce{SO2 + 2H2O -> SO4^2- + 4H+ + 2e-}"
+  },
+  {
+    "id": "C1-29",
+    "title": "二酸化硫黄と硫化水素との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化硫黄と硫化水素との反応",
+    "answer": "\\ce{SO2 + 2H2S -> 3S + 2H2O}"
+  },
+  {
+    "id": "C1-30",
+    "title": "接触法の各段階を反応式で（3段階）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "接触法の各段階を反応式で（3段階）",
+    "answer": "\\ce{S + O2 -> SO2} \\\\\\ce{2SO2 + O2 -> 2SO3} \\\\\\ce{SO3 + H2O -> H2SO4}"
+  },
+  {
+    "id": "C1-31",
+    "title": "亜硝酸アンモニウムの熱分解",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "亜硝酸アンモニウムの熱分解",
+    "answer": "\\ce{NH4NO2 -> N2 + 2H2O}"
+  },
+  {
+    "id": "C1-32",
+    "title": "水酸化カルシウムと塩化アンモニウム（混合物を加熱）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化カルシウムと塩化アンモニウム（混合物を加熱）",
+    "answer": "\\ce{Ca(OH)2 + 2NH4Cl -> CaCl2 + 2NH3 + 2H2O}"
+  },
+  {
+    "id": "C1-33",
+    "title": "ハーバー・ボッシュ法を反応式で（触媒も）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ハーバー・ボッシュ法を反応式で（触媒も）",
+    "answer": "\\ce{N2 + 3H2 -> 2NH3}"
+  },
+  {
+    "id": "C1-34",
+    "title": "銅と希硝酸との反応式",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "銅と希硝酸との反応式",
+    "answer": "\\ce{3Cu + 8HNO3 -> 3Cu(NO3)2 + 2NO + 4H2O}"
+  },
+  {
+    "id": "C1-35",
+    "title": "銅と濃硝酸との反応式",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "銅と濃硝酸との反応式",
+    "answer": "\\ce{Cu + 4HNO3 -> Cu(NO3)2 + 2NO2 + 2H2O}"
+  },
+  {
+    "id": "C1-36",
+    "title": "二酸化窒素が冷水に溶ける反応式",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化窒素が冷水に溶ける反応式",
+    "answer": "\\ce{2NO2 + H2O -> HNO3 + HNO2}"
+  },
+  {
+    "id": "C1-37",
+    "title": "二酸化窒素が温水に溶ける反応式",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化窒素が温水に溶ける反応式",
+    "answer": "\\ce{3NO2 + H2O -> 2HNO3 + NO}"
+  },
+  {
+    "id": "C1-38",
+    "title": "硝酸の光による分解反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "硝酸の光による分解反応",
+    "answer": "\\ce{4HNO3 -> 4NO2 + O2 + 2H2O}"
+  },
+  {
+    "id": "C1-39",
+    "title": "オストワルト法の各段階を反応式で（3段階）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "オストワルト法の各段階を反応式で（3段階）",
+    "answer": "\\ce{4NH3 + 5O2 -> 4NO + 6H2O} \\\\\\ce{2NO + O2 -> 2NO2} \\\\\\ce{3NO2 + H2O -> 2HNO3 + NO}"
+  },
+  {
+    "id": "C1-40",
+    "title": "オストワルト法の全体をまとめた式",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "オストワルト法の全体をまとめた式",
+    "answer": "\\ce{NH3 + 2O2 -> HNO3 + H2O}"
+  },
+  {
+    "id": "C1-41",
+    "title": "亜硝酸の熱分解反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "亜硝酸の熱分解反応",
+    "answer": "\\ce{3HNO2 -> HNO3 + 2NO + H2O}"
+  },
+  {
+    "id": "C1-42",
+    "title": "黄リンの燃焼反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "黄リンの燃焼反応",
+    "answer": "\\ce{P4 + 5O2 -> P4O10}"
+  },
+  {
+    "id": "C1-43",
+    "title": "十酸化四リンが水に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "十酸化四リンが水に溶ける反応",
+    "answer": "\\ce{P4O10 + 6H2O -> 4H3PO4}"
+  },
+  {
+    "id": "C1-44",
+    "title": "リン酸カルシウムを硫酸で処理して過リン酸石灰を得る反応式",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "リン酸カルシウムを硫酸で処理して過リン酸石灰を得る反応式",
+    "answer": "\\ce{Ca3(PO4)2 + 2H2SO4 -> Ca(H2PO4)2 + 2CaSO4}"
+  },
+  {
+    "id": "C1-45",
+    "title": "ギ酸と濃硫酸を混合して加熱した反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ギ酸と濃硫酸を混合して加熱した反応",
+    "answer": "\\ce{HCOOH -> CO + H2O}"
+  },
+  {
+    "id": "C1-46",
+    "title": "シュウ酸と濃硫酸を混合して加熱した反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "シュウ酸と濃硫酸を混合して加熱した反応",
+    "answer": "\\ce{(COOH)2 -> CO + CO2 + H2O}"
+  },
+  {
+    "id": "C1-47",
+    "title": "コークスと水蒸気を反応させてCOとH₂の混合気体を得る反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "コークスと水蒸気を反応させてCOとH₂の混合気体を得る反応",
+    "answer": "\\ce{C + H2O -> CO + H2}"
+  },
+  {
+    "id": "C1-48",
+    "title": "二酸化ケイ素をコークスとともに強熱して還元する反応式",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化ケイ素をコークスとともに強熱して還元する反応式",
+    "answer": "\\ce{SiO2 + 2C -> Si + 2CO}"
+  },
+  {
+    "id": "C1-49",
+    "title": "二酸化ケイ素と気体のフッ化水素との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化ケイ素と気体のフッ化水素との反応",
+    "answer": "\\ce{SiO2 + 4HF -> SiF4 + 2H2O}"
+  },
+  {
+    "id": "C1-50",
+    "title": "二酸化ケイ素とフッ化水素酸との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化ケイ素とフッ化水素酸との反応",
+    "answer": "\\ce{SiO2 + 6HF -> H2SiF6 + 2H2O}"
+  },
+  {
+    "id": "C1-51",
+    "title": "二酸化ケイ素と水酸化ナトリウムとの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化ケイ素と水酸化ナトリウムとの反応",
+    "answer": "\\ce{SiO2 + 2NaOH -> Na2SiO3 + H2O}"
+  },
+  {
+    "id": "C1-52",
+    "title": "二酸化ケイ素と炭酸ナトリウムとの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "二酸化ケイ素と炭酸ナトリウムとの反応",
+    "answer": "\\ce{SiO2 + Na2CO3 -> Na2SiO3 + CO2}"
+  },
+  {
+    "id": "C1-53",
+    "title": "シリカゲルの製法を各段階の反応式で（3段階）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "シリカゲルの製法を各段階の反応式で（3段階）",
+    "answer": "\\ce{SiO2 + 2NaOH -> Na2SiO3 + H2O} \\\\\\ce{Na2SiO3 + 2HCl -> H2SiO3 + 2NaCl} \\\\\\ce{H2SiO3 -> SiO2{·}nH2O + (1-n)H2O}"
+  },
+  {
+    "id": "C1-54",
+    "title": "ナトリウムと水との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ナトリウムと水との反応",
+    "answer": "\\ce{2Na + 2H2O -> 2NaOH + H2}"
+  },
+  {
+    "id": "C1-55",
+    "title": "ナトリウムと酸素との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ナトリウムと酸素との反応",
+    "answer": "\\ce{4Na + O2 -> 2Na2O}"
+  },
+  {
+    "id": "C1-56",
+    "title": "カルシウムと酸素との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "カルシウムと酸素との反応",
+    "answer": "\\ce{2Ca + O2 -> 2CaO}"
+  },
+  {
+    "id": "C1-57",
+    "title": "\\ce{OH^-}の熱分解（イオン反応式）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "\\ce{OH^-}の熱分解（イオン反応式）",
+    "answer": "\\ce{2OH- -> O^2- + H2O}"
+  },
+  {
+    "id": "C1-58",
+    "title": "\\ce{HCO3^-}の熱分解（イオン反応式）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "\\ce{HCO3^-}の熱分解（イオン反応式）",
+    "answer": "\\ce{2HCO3- -> CO3^2- + CO2 + H2O}"
+  },
+  {
+    "id": "C1-59",
+    "title": "\\ce{CO3^{2-}}の熱分解（イオン反応式）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "\\ce{CO3^{2-}}の熱分解（イオン反応式）",
+    "answer": "\\ce{CO3^2- -> O^2- + CO2}"
+  },
+  {
+    "id": "C1-60",
+    "title": "酸化ナトリウムと水との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化ナトリウムと水との反応",
+    "answer": "\\ce{Na2O + H2O -> 2NaOH}"
+  },
+  {
+    "id": "C1-61",
+    "title": "単体のナトリウムが水素を還元する反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "単体のナトリウムが水素を還元する反応",
+    "answer": "\\ce{2Na + H2 -> 2NaH}"
+  },
+  {
+    "id": "C1-62",
+    "title": "水素化ナトリウムと水との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水素化ナトリウムと水との反応",
+    "answer": "\\ce{NaH + H2O -> NaOH + H2}"
+  },
+  {
+    "id": "C1-63",
+    "title": "水酸化ナトリウムの固体が二酸化炭素を吸収する反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化ナトリウムの固体が二酸化炭素を吸収する反応",
+    "answer": "\\ce{2NaOH + CO2 -> Na2CO3 + H2O}"
+  },
+  {
+    "id": "C1-64",
+    "title": "アンモニアソーダ法（ソルベー法）各段階の反応式（5つ）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "アンモニアソーダ法（ソルベー法）各段階の反応式（5つ）",
+    "answer": "\\ce{NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl} \\\\\\ce{2NaHCO3 -> Na2CO3 + CO2 + H2O} \\\\\\ce{CaCO3 -> CaO + CO2} \\\\\\ce{CaO + H2O -> Ca(OH)2} \\\\\\ce{Ca(OH)2 + 2NH4Cl -> CaCl2 + 2NH3 + 2H2O}"
+  },
+  {
+    "id": "C1-65",
+    "title": "石灰石に塩酸を加えた反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "石灰石に塩酸を加えた反応",
+    "answer": "\\ce{CaCO3 + 2HCl -> CaCl2 + CO2 + H2O}"
+  },
+  {
+    "id": "C1-66",
+    "title": "石灰水に二酸化炭素を吹き込むと白濁する反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "石灰水に二酸化炭素を吹き込むと白濁する反応",
+    "answer": "\\ce{Ca(OH)2 + CO2 -> CaCO3 + H2O}"
+  },
+  {
+    "id": "C1-67",
+    "title": "さらに二酸化炭素を吹き込むと無色になる反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "さらに二酸化炭素を吹き込むと無色になる反応",
+    "answer": "\\ce{CaCO3 + CO2 + H2O -> Ca(HCO3)2}"
+  },
+  {
+    "id": "C1-68",
+    "title": "無色になった溶液を加熱すると再び白濁する反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "無色になった溶液を加熱すると再び白濁する反応",
+    "answer": "\\ce{Ca(HCO3)2 -> CaCO3 + CO2 + H2O}"
+  },
+  {
+    "id": "C1-69",
+    "title": "消石灰に塩素を吸収させる反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "消石灰に塩素を吸収させる反応",
+    "answer": "\\ce{Ca(OH)2 + Cl2 -> CaCl(ClO){·}H2O}"
+  },
+  {
+    "id": "C1-70",
+    "title": "さらし粉に希塩酸を加える反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "さらし粉に希塩酸を加える反応",
+    "answer": "\\ce{CaCl(ClO){·}H2O + 2HCl -> CaCl2 + Cl2 + 2H2O}"
+  },
+  {
+    "id": "C1-71",
+    "title": "生石灰とコークスの混合物を2000℃に加熱してカーバイドを得る反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "生石灰とコークスの混合物を2000℃に加熱してカーバイドを得る反応",
+    "answer": "\\ce{CaO + 3C -> CaC2 + CO}"
+  },
+  {
+    "id": "C1-72",
+    "title": "カーバイドに水を加えたときの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "カーバイドに水を加えたときの反応",
+    "answer": "\\ce{CaC2 + 2H2O -> C2H2 + Ca(OH)2}"
+  },
+  {
+    "id": "C1-73",
+    "title": "セッコウを加熱し焼きセッコウを得る反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "セッコウを加熱し焼きセッコウを得る反応",
+    "answer": "\\ce{CaSO4{·}2H2O -> CaSO4{·}1/2H2O + 1/2H2O}"
+  },
+  {
+    "id": "C1-74",
+    "title": "焼きセッコウを300℃以上に加熱した反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "焼きセッコウを300℃以上に加熱した反応",
+    "answer": "\\ce{CaSO4{·}1/2H2O -> CaSO4 + 1/2H2O}"
+  },
+  {
+    "id": "C1-75",
+    "title": "単体のアルミニウムが塩酸に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "単体のアルミニウムが塩酸に溶ける反応",
+    "answer": "\\ce{2Al + 6HCl -> 2AlCl3 + 3H2}"
+  },
+  {
+    "id": "C1-76",
+    "title": "酸化アルミニウムが塩酸に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化アルミニウムが塩酸に溶ける反応",
+    "answer": "\\ce{Al2O3 + 6HCl -> 2AlCl3 + 3H2O}"
+  },
+  {
+    "id": "C1-77",
+    "title": "水酸化アルミニウムが塩酸に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化アルミニウムが塩酸に溶ける反応",
+    "answer": "\\ce{Al(OH)3 + 3HCl -> AlCl3 + 3H2O}"
+  },
+  {
+    "id": "C1-78",
+    "title": "単体のアルミニウムが水酸化ナトリウムに溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "単体のアルミニウムが水酸化ナトリウムに溶ける反応",
+    "answer": "\\ce{2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2}"
+  },
+  {
+    "id": "C1-79",
+    "title": "酸化アルミニウムが水酸化ナトリウムに溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化アルミニウムが水酸化ナトリウムに溶ける反応",
+    "answer": "\\ce{Al2O3 + 2NaOH + 3H2O -> 2Na[Al(OH)4]}"
+  },
+  {
+    "id": "C1-80",
+    "title": "水酸化アルミニウムが水酸化ナトリウムに溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化アルミニウムが水酸化ナトリウムに溶ける反応",
+    "answer": "\\ce{Al(OH)3 + NaOH -> Na[Al(OH)4]}"
+  },
+  {
+    "id": "C1-81",
+    "title": "単体の亜鉛が塩酸に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "単体の亜鉛が塩酸に溶ける反応",
+    "answer": "\\ce{Zn + 2HCl -> ZnCl2 + H2}"
+  },
+  {
+    "id": "C1-82",
+    "title": "酸化亜鉛が塩酸に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化亜鉛が塩酸に溶ける反応",
+    "answer": "\\ce{ZnO + 2HCl -> ZnCl2 + H2O}"
+  },
+  {
+    "id": "C1-83",
+    "title": "水酸化亜鉛が塩酸に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化亜鉛が塩酸に溶ける反応",
+    "answer": "\\ce{Zn(OH)2 + 2HCl -> ZnCl2 + 2H2O}"
+  },
+  {
+    "id": "C1-84",
+    "title": "単体の亜鉛が水酸化ナトリウムに溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "単体の亜鉛が水酸化ナトリウムに溶ける反応",
+    "answer": "\\ce{Zn + 2NaOH + 2H2O -> Na2[Zn(OH)4] + H2}"
+  },
+  {
+    "id": "C1-85",
+    "title": "酸化亜鉛が水酸化ナトリウムに溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化亜鉛が水酸化ナトリウムに溶ける反応",
+    "answer": "\\ce{ZnO + 2NaOH + H2O -> Na2[Zn(OH)4]}"
+  },
+  {
+    "id": "C1-86",
+    "title": "水酸化亜鉛が水酸化ナトリウムに溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化亜鉛が水酸化ナトリウムに溶ける反応",
+    "answer": "\\ce{Zn(OH)2 + 2NaOH -> Na2[Zn(OH)4]}"
+  },
+  {
+    "id": "C1-87",
+    "title": "アルミニウムと酸化鉄(III)を混合し点火（テルミット反応）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "アルミニウムと酸化鉄(III)を混合し点火（テルミット反応）",
+    "answer": "\\ce{2Al + Fe2O3 -> 2Fe + Al2O3}"
+  },
+  {
+    "id": "C1-88",
+    "title": "アルミニウムの工業的製法（ホール・エルー法）を4段階で",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "アルミニウムの工業的製法（ホール・エルー法）を4段階で",
+    "answer": "\\ce{Al2O3 + 2OH- + 3H2O -> 2[Al(OH)4]-} \\\\\\ce{[Al(OH)4]- -> Al(OH)3 + OH-} \\\\\\ce{2Al(OH)3 -> Al2O3 + 3H2O} \\\\\\ce{C + O^2- -> CO + 2e- / C + 2O^2- -> CO2 + 4e-} \\\\\\ce{Al^3+ + 3e- -> Al}"
+  },
+  {
+    "id": "C1-89",
+    "title": "水酸化亜鉛の沈殿がアンモニア水に溶ける反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化亜鉛の沈殿がアンモニア水に溶ける反応",
+    "answer": "\\ce{Zn(OH)2 + 4NH3 -> [Zn(NH3)4]^2+ + 2OH-}"
+  },
+  {
+    "id": "C1-90",
+    "title": "銅の単体を空気中で加熱すると黒くなる",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "銅の単体を空気中で加熱すると黒くなる",
+    "answer": "\\ce{2Cu + O2 -> 2CuO}"
+  },
+  {
+    "id": "C1-91",
+    "title": "塩化銅(II)水溶液に水酸化ナトリウムを加える反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "塩化銅(II)水溶液に水酸化ナトリウムを加える反応",
+    "answer": "\\ce{CuCl2 + 2NaOH -> Cu(OH)2 + 2NaCl}"
+  },
+  {
+    "id": "C1-92",
+    "title": "水酸化銅(II)の沈殿に過剰のアンモニア水を加える反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化銅(II)の沈殿に過剰のアンモニア水を加える反応",
+    "answer": "\\ce{Cu(OH)2 + 4NH3 -> [Cu(NH3)4]^2+ + 2OH-}"
+  },
+  {
+    "id": "C1-93",
+    "title": "硫酸銅(II)水溶液に硫化水素を通じたときの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "硫酸銅(II)水溶液に硫化水素を通じたときの反応",
+    "answer": "\\ce{CuSO4 + H2S -> CuS + H2SO4}"
+  },
+  {
+    "id": "C1-94",
+    "title": "硝酸銀水溶液に水酸化ナトリウムを加える反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "硝酸銀水溶液に水酸化ナトリウムを加える反応",
+    "answer": "\\ce{2Ag+ + 2OH- -> Ag2O + H2O}"
+  },
+  {
+    "id": "C1-95",
+    "title": "酸化銀の沈殿に過剰量のアンモニア水を加える反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化銀の沈殿に過剰量のアンモニア水を加える反応",
+    "answer": "\\ce{Ag2O + 4NH3 + H2O -> 2[Ag(NH3)2]+ + 2OH-}"
+  },
+  {
+    "id": "C1-96",
+    "title": "酸化銀を加熱して熱分解させる反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化銀を加熱して熱分解させる反応",
+    "answer": "\\ce{2Ag2O -> 4Ag + O2}"
+  },
+  {
+    "id": "C1-97",
+    "title": "硝酸銀水溶液に硫化水素を通じたときの反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "硝酸銀水溶液に硫化水素を通じたときの反応",
+    "answer": "\\ce{2AgNO3 + H2S -> Ag2S + 2HNO3}"
+  },
+  {
+    "id": "C1-98",
+    "title": "鉄の単体と高温の水蒸気との反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "鉄の単体と高温の水蒸気との反応",
+    "answer": "\\ce{3Fe + 4H2O -> Fe3O4 + 4H2}"
+  },
+  {
+    "id": "C1-99",
+    "title": "磁鉄鉱（\\ce{Fe3O4}）を\\ce{CO}によって還元する反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "磁鉄鉱（\\ce{Fe3O4}）を\\ce{CO}によって還元する反応",
+    "answer": "\\ce{Fe3O4 + 4CO -> 3Fe + 4CO2}"
+  },
+  {
+    "id": "C1-100",
+    "title": "赤鉄鉱（\\ce{Fe2O3}）を\\ce{CO}によって還元する反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "赤鉄鉱（\\ce{Fe2O3}）を\\ce{CO}によって還元する反応",
+    "answer": "\\ce{Fe2O3 + 3CO -> 2Fe + 3CO2}"
+  },
+  {
+    "id": "C1-101",
+    "title": "\\ce{Fe^{2+}}の水溶液を空気中に放置したときの変色反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "\\ce{Fe^{2+}}の水溶液を空気中に放置したときの変色反応",
+    "answer": "\\ce{4Fe^2+ + O2 + 2H2O -> 4Fe^3+ + 4OH-}"
+  },
+  {
+    "id": "C1-102",
+    "title": "水酸化鉄(II)の沈殿を空気中に放置したときの変色反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "水酸化鉄(II)の沈殿を空気中に放置したときの変色反応",
+    "answer": "\\ce{4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3}"
+  },
+  {
+    "id": "C1-103",
+    "title": "クロム酸イオンの水溶液を酸性にしたときに起こる反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "クロム酸イオンの水溶液を酸性にしたときに起こる反応",
+    "answer": "\\ce{2CrO4^2- + 2H+ -> Cr2O7^2- + H2O}"
+  },
+  {
+    "id": "C1-104",
+    "title": "ジクロム酸イオンの水溶液を塩基性にしたときに起こる反応",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ジクロム酸イオンの水溶液を塩基性にしたときに起こる反応",
+    "answer": "\\ce{Cr2O7^2- + 2OH- -> 2CrO4^2- + H2O}"
+  },
+  {
+    "id": "C1-105",
+    "title": "ジクロム酸イオンの半反応式（酸化剤として／酸性条件下）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "ジクロム酸イオンの半反応式（酸化剤として／酸性条件下）",
+    "answer": "\\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}"
+  },
+  {
+    "id": "C1-106",
+    "title": "過マンガン酸イオンの半反応式（酸化剤として／酸性条件下）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "過マンガン酸イオンの半反応式（酸化剤として／酸性条件下）",
+    "answer": "\\ce{MnO4^- + 8H+ + 5e- -> Mn^2+ + 4H2O}"
+  },
+  {
+    "id": "C1-107",
+    "title": "過マンガン酸イオンの半反応式（酸化剤として／塩基性条件下）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "過マンガン酸イオンの半反応式（酸化剤として／塩基性条件下）",
+    "answer": "\\ce{MnO4^- + 2H2O + 3e- -> MnO2 + 4OH-}"
+  },
+  {
+    "id": "C1-108",
+    "title": "酸化マンガン(IV)の半反応式（酸化剤として／酸性条件下）",
+    "category": "無機化学",
+    "difficulty": 1,
+    "latex": "酸化マンガン(IV)の半反応式（酸化剤として／酸性条件下）",
+    "answer": "\\ce{MnO2 + 4H+ + 2e- -> Mn^2+ + 2H2O}"
+  }
+]
