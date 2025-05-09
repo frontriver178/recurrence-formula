@@ -19,7 +19,7 @@ const prompts = {
   ベクトル: '次の問いに答えよ．',
   積分法:  '次の問いに答えよ.ただし不定積分が与えられている場合には積分定数をCとせよ.',
   無機化学: '次の反応の化学反応式を答えよ.',
-  default:'次の問いに答えよ.'
+  default: '次の問いに答えよ.'
 };
 
 app.post('/generate-mix', (req, res) => {
@@ -29,7 +29,6 @@ app.post('/generate-mix', (req, res) => {
 
   const filtered = problems.filter(p => p.category === category);
   const selected = [];
-
   for (const [level, cnt] of Object.entries(counts)) {
     const pool = filtered.filter(p => p.difficulty === +level);
     const pickCount = Math.min(pool.length, cnt);
